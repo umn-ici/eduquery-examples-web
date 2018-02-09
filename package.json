@@ -1,0 +1,22 @@
+{
+  "name": "eduquery-examples-web",
+  "version": "1.0.0",
+  "description": "Web home for eduQuery documentation written for Direct Course authors.",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "watch": "gulp watch"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-append-prepend": "^1.0.4",
+    "gulp-cli": "^2.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-string-replace": "^1.0.0"
+  }
+}

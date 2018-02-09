@@ -1,0 +1,20 @@
+
+#multiplechoice {width:842px;margin:0 auto;border:1px solid #ccc;}
+.mc_knowledgebank {padding-top:7px;}
+#RR4-13-NO1 .multiplechoice_ui {min-height:400px;}
+#RR4-13-NO1 .msg_win {font-size:1.1em;}
+
+#RR4-31-NO3 .multiplechoice_ui {min-height:400px;}
+#RR4-31-NO3 .msg_win {font-size:1.1em;}
+
+#RR4-25-NO2 .matching {width:842px;margin:0 auto;}
+#RR4-25-NO2 .matching_ui {min-height:640px;background-color: #FFFFFF;font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;border:1px solid #ccc;}
+#RR4-25-NO2 .statement_defs {width:274px;}
+#RR4-25-NO2 .answer_areas {left:380px;width:442px;}
+#RR4-25-NO2 .answer_area {width:100%; margin-bottom:10px;}
+#RR4-25-NO2 .answer_area a, #RR4-25-NO2 #matching .win .answer_area a {background-image:none;}
+#RR4-25-NO2 .answer_area .area_title {margin-left:0;}
+#RR4-25-NO2 .dropped_statement{margin:5px;}
+
+#RR4-25-NO2 #aa1 a, #RR4-25-NO2 .win #aa1 a,
+#RR4-25-NO2 #aa2 a, #RR4-25-NO2 .win #aa2 a{min-height:240px; font-size: 1em;}

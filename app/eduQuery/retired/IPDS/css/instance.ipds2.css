@@ -1,0 +1,20 @@
+#info_reveal {position:relative;width:842px;min-height:500px;margin:0 auto;/*padding:15px;*/border:1px solid #ccc;background-color: #FFFFFF;font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;overflow:hidden;}
+#message {position:absolute;top:0;left:0;width:100%;z-index:50;}
+#message h1 {margin:0;padding-left:10px;font-size:1em;font-weight:normal;background-color:#273E4C;color:#fff;}
+
+#info_reveal dl {margin:50px 25px;width:400px;float:left;}
+#info_reveal dt {margin-bottom:.5em;}
+#info_reveal dd {margin-bottom:1em;margin-left:10px;padding-left:0;}
+#info_reveal dt a {display:inline-block;text-decoration:none;padding:5px;border:1px solid #333;background-color:#d7e8f5;color:#666;}
+#info_reveal dt a:hover, #info_reveal dt a:focus {/*border-color:#00afe8;*/background-color:#b0d1eb;color:#333;outline:none;}
+#info_reveal dt a img {border:none;}
+
+#info_reveal_graphics {width:336px;margin:35px 25px 0 0;float:right;}
+
+#info_reveal dt a {
+	border-radius:9px;
+	-moz-border-radius:9px;
+	-webkit-border-radius:9px;}
+
+/*WebAIM hidden class (AT readable, but out of sight)*/
+.hidden {position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;}

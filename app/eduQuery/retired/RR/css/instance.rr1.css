@@ -1,0 +1,26 @@
+#multiplechoice {width:842px;margin:0 auto;border:1px solid #ccc;}
+.mc_knowledgebank {padding-top:7px;}
+#RR1-16-NO1 .multiplechoice_ui {min-height:400px;}
+#RR1-16-NO1 .msg_win {font-size:1.1em;}
+
+#RR1-19-NO2 .matching {width:842px;margin:0 auto;}
+#RR1-19-NO2 .matching_ui {min-height:520px;background-color: #FFFFFF;font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;border:1px solid #ccc;}
+#RR1-19-NO2 .statement_defs {width:274px;}
+#RR1-19-NO2 .answer_areas {left:380px;width:442px;}
+#RR1-19-NO2 .answer_area {width:100%; margin-bottom:10px;}
+#RR1-19-NO2 .answer_area a, #RR1-19-NO2 #matching .win .answer_area a {background-image:none;}
+#RR1-19-NO2 .answer_area .area_title {margin-left:0;}
+#RR1-19-NO2 .dropped_statement{margin:5px;}
+
+#RR1-19-NO2 #aa1 a, #RR1-19-NO2 .win #aa1 a,
+#RR1-19-NO2 #aa2 a, #RR1-19-NO2 .win #aa2 a{min-height:179px; font-size: 1em;}
+
+#RR1-21-NO3 .panel {padding: 49px 60px 15px; line-height: 1.5em;}
+#RR1-21-NO3 .TwoColumn1 {width:450px;}
+#RR1-21-NO3 .TwoColumn2 {width:300px;}
+
+#RR1-21-NO3 ul, #RR1-22-NO4 ul{list-style-type: lower-roman;}
+
+#RR1-22-NO4 .panel {padding: 49px 60px 15px; line-height: 1.5em;}
+#RR1-22-NO4 .TwoColumn1 {width:450px;}
+#RR1-22-NO4 .TwoColumn2 {width:300px;}

@@ -1,0 +1,112 @@
+body, html {
+	height:100%;
+	margin:0;
+	padding:0;}
+body {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:1.5em;
+	background-color:#97cc3a;
+	/*background: url('../images/bg.gif') repeat top;*/}
+h1 {color:#fff;}
+iframe {
+	background-color:#fff;}
+
+
+/*faux center column*/
+dt, dd p {
+	width:500px;
+	margin:0 auto;
+	padding:0 20px;}
+.controls ul {
+	width:510px;
+	margin:0 auto;}
+
+.mainmenu {}
+.controls {
+	padding:0 20px;
+    overflow: hidden;
+    position: relative;
+    background-color:#d4f39f;}
+.controls ul {
+    list-style-type: none;
+	padding:0;
+    overflow: hidden;
+    position: relative;}
+.controls li {
+    margin: 15px 10px 15px 10px;
+	font-family:Arial, Helvetica, sans-serif;	
+	font-size: 10pt;
+	display: inline-block;
+    width:120px;
+	margin:0;
+    min-height: 100px;
+    vertical-align: top;
+    text-align: center;
+    zoom: 1;
+    *display: inline;}
+.controls li a {
+	display:block;
+	min-height:112px;
+	padding:10px;}
+.controls li a:hover, .controls li a:focus {
+	background-color:#F5F5DF;}
+.current {
+	background-color:#F5F5DF;}
+dt {
+	padding-top:10px;
+    background-color:#d4f39f;
+	border:0px solid #fff;
+	border-radius:21px 21px 0 0;
+	-moz-border-radius:21px 21px 0 0;
+	-webkit-border-radius:21px 21px 0 0;}
+dd {
+	margin-left:0;
+	margin-bottom:1.5em;
+	margin-right:0;}
+dd p {
+	margin-bottom:0;
+	padding-bottom:.5em;
+	font-size:.7em;
+	font-style: italic;
+	color:#333;
+    background-color:#d4f39f;}
+.key {/*width:540px;*/padding:5px;background-color:#ccc;font-style:italic;font-size:.8em;font-family:monospace;}
+.key dd, .key p {margin-bottom:0;}
+
+ a {
+	border:none;
+    padding: 0px; 
+	color: #000000;
+	text-decoration: none;
+	text-align: center;
+    /*min-height: 100px;*/
+}
+img{
+      border:none;
+}
+
+h1{
+    margin: 0 0 25px 0;
+    text-align: center;
+}
+
+.hide {
+	position: absolute !important;
+	top: -9999px !important;
+	left: -9999px !important;
+}
+
+/*Box container for eduQuery example iframe*/
+#boxy {
+	padding-top:20px;
+	background-color:#F5F5DF;}
+a#close {
+	display:block;
+	width:300px;
+	margin:10px auto;
+	border:2px solid #df0000;
+	background-color:#fff;
+	color:#df0000;}
+a#close:hover, a#close:focus {
+	background-color:#df0000;
+	color:#fff;}

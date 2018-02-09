@@ -1,0 +1,42 @@
+
+#RR2-16-NO1 .matching {width:842px;margin:0 auto;}
+#RR2-16-NO1 .matching_ui {min-height:600px;background-color: #FFFFFF;font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;border:1px solid #ccc;}
+#RR2-16-NO1 .statement_defs {width:167px;}
+#RR2-16-NO1 .answer_areas {left:280px;width:542px;}
+#RR2-16-NO1 .answer_area {width:100%; margin-bottom:10px;}
+#RR2-16-NO1 .answer_area a, #RR2-16-NO1 #matching .win .answer_area a {background-image:none;}
+#RR2-16-NO1 .answer_area .area_title {margin-left:0;}
+#RR2-16-NO1 .dropped_statement{margin: 0 5px;}
+
+#RR2-16-NO1 #aa1 a, #RR2-16-NO1 .win #aa1 a,
+#RR2-16-NO1 #aa2 a, #RR2-16-NO1 .win #aa2 a,
+#RR2-16-NO1 #aa3 a, #RR2-16-NO1 .win #aa3 a,
+#RR2-16-NO1 #aa4 a, #RR2-16-NO1 .win #aa4 a,
+#RR2-16-NO1 #aa5 a, #RR2-16-NO1 .win #aa5 a{min-height:70px; font-size: 1em;}
+
+#RR2-22-NO2 .matching {width:842px;margin:0 auto;}
+#RR2-22-NO2 .matching_ui {min-height:565px;background-color: #FFFFFF;font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;border:1px solid #ccc;}
+#RR2-22-NO2 .statement_defs {width:274px;}
+#RR2-22-NO2 .answer_areas {left:380px;width:442px;}
+#RR2-22-NO2 .answer_area {width:100%; margin-bottom:10px;}
+#RR2-22-NO2 .answer_area a, #RR2-22-NO2 #matching .win .answer_area a {background-image:none;}
+#RR2-22-NO2 .answer_area .area_title {margin-left:0;}
+#RR2-22-NO2 .dropped_statement{margin:5px;}
+
+#RR2-22-NO2 #aa1 a, #RR2-22-NO2 .win #aa1 a,
+#RR2-22-NO2 #aa2 a, #RR2-22-NO2 .win #aa2 a{min-height:200px; font-size: 1em;}
+
+#RR2-37-NO4 .matching {width:842px;margin:0 auto;}
+#RR2-37-NO4 .matching_ui {min-height:600px;background-color: #FFFFFF;font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;border:1px solid #ccc;}
+#RR2-37-NO4 .statement_defs {width:167px;}
+#RR2-37-NO4 .answer_areas {left:280px;width:542px;}
+#RR2-37-NO4 .answer_area {width:100%; margin-bottom:10px;}
+#RR2-37-NO4 .answer_area a, #RR2-37-NO4 #matching .win .answer_area a {background-image:none;}
+#RR2-37-NO4 .answer_area .area_title {margin-left:0;}
+#RR2-37-NO4 .dropped_statement{margin: 0 5px;}
+
+#RR2-37-NO4 #aa1 a, #RR2-37-NO4 .win #aa1 a,
+#RR2-37-NO4 #aa2 a, #RR2-37-NO4 .win #aa2 a,
+#RR2-37-NO4 #aa3 a, #RR2-37-NO4 .win #aa3 a,
+#RR2-37-NO4 #aa4 a, #RR2-37-NO4 .win #aa4 a,
+#RR2-37-NO4 #aa5 a, #RR2-37-NO4 .win #aa5 a{min-height:70px; font-size: 1em;}

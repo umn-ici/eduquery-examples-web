@@ -1,0 +1,48 @@
+
+#multiplechoice {width:842px;margin:0 auto;border:1px solid #ccc;}
+.mc_knowledgebank {padding-top:7px;}
+#RR5-9-NO1 .multiplechoice_ui {min-height:400px;}
+#RR5-9-NO1 .msg_win {font-size:1.1em;}
+
+#RR5-14-NO2 .matching {width:842px;margin:0 auto;}
+#RR5-14-NO2 .matching_ui {min-height:510px;background-color: #FFFFFF;font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;border:1px solid #ccc;}
+#RR5-14-NO2 .statement_defs {width:167px;}
+#RR5-14-NO2 .answer_areas {left:280px;width:542px;}
+#RR5-14-NO2 .answer_area {width:100%; margin-bottom:10px;}
+#RR5-14-NO2 .answer_area a, #RR5-14-NO2 #matching .win .answer_area a {background-image:none;}
+#RR5-14-NO2 .answer_area .area_title {margin-left:0;}
+#RR5-14-NO2 .dropped_statement{margin: 0 5px;}
+
+#RR5-14-NO2 #aa1 a, #RR5-14-NO2 .win #aa1 a,
+#RR5-14-NO2 #aa2 a, #RR5-14-NO2 .win #aa2 a,
+#RR5-14-NO2 #aa3 a, #RR5-14-NO2 .win #aa3 a,
+#RR5-14-NO2 #aa4 a, #RR5-14-NO2 .win #aa4 a {min-height:70px; font-size: 1em;}
+
+#RR5-29-NO3 .multiplechoice_ui {min-height:400px;}
+#RR5-29-NO3 .msg_win {font-size:1.1em;}
+
+#RR5-34-NO4 #matching{width:950px;margin:0 auto;border:1px solid #ccc;}
+#RR5-34-NO4 .matching_ui {position:relative;background-color: #FFFFFF;font-family:"Trebuchet MS",Arial,Helvetica,sans-serif;overflow: visible;}
+#RR5-34-NO4 .answer_area a, #RR5-34-NO4 #matching .win .answer_area a {min-height:270px;background-image:none;}
+#RR5-34-NO4 .answer_area .area_title {margin-left:0;}
+/*#scene{margin-top: 35px; display:block;}*/
+#RR5-34-NO4 .matching_ui .statement_defs {width:240px;left:350px;}
+#RR5-34-NO4 .matching_ui .answer_areas {width:280px;left:620px;}
+#RR5-34-NO4 .matching_ui .answer_areas .answer_area {float:none;}
+#RR5-34-NO4 .matching_ui .feedback_dialogue{position: absolute; top:0; left: 0;width: 950px;}
+#scene {
+	padding:5px 10px 0;
+	border:2px solid #B0D1EB;
+	border-radius:9px;
+	-moz-border-radius:9px;
+	-webkit-border-radius:9px;
+	background-color:#e8eff5;}
+.matching_ui #scene-col {width:280px;padding:1px 20px 0 0;border-right:1px solid #ccc;}
+.matching_ui #scene {
+	margin-top:70px;
+	margin-left:20px;}
+.matching_ui #scene h3 {margin-top:0;border-bottom:2px solid #fff;text-align:center;}
+.matching_ui #scene p {font-family:Arial, Helvetica, sans-serif;font-size:.9em;}
+
+#RR5-34-NO4 .matching_ui {min-height:700px;}
+#RR5-34-NO4 .matching_ui #scene-col {min-height:700px;}

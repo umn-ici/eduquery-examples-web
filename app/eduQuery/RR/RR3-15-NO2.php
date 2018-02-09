@@ -1,0 +1,220 @@
+<?php
+require "../../inc/auth.php";
+?>
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Abusive Behavior</title>
+
+<!--lib css-->
+<link href="../lib/slidescroller/v12/css/styles.css" rel="stylesheet" type="text/css">
+<link href="../lib/jPlayer/v20/skin/jplayer.blue.monday.css" rel="stylesheet" type="text/css">
+<link href="../lib/multiplechoice/v12/css/multiplechoice.min.css" rel="stylesheet" type="text/css" />
+
+
+<!--course/lesson css-->
+<link href="css/course.css" rel="stylesheet" type="text/css">
+<link href="css/instance.rr3.css" rel="stylesheet" type="text/css">
+
+<!--eduQuery Example css-->
+<link href="../../css/eduqueryexample.css" rel="stylesheet" type="text/css">
+
+<!--lib javascript-->
+<script src="../lib/jquery/jquery-1.7.min.js" type="text/javascript"></script>
+<script src="../lib/jPlayer/v20/jquery.jplayer.min.js" type="text/javascript"></script>
+<script src="../lib/slidescroller/v12/js/slidescroller.audio.min.js" type="text/javascript"></script>
+<script src="../lib/slidescroller/v12/js/pss.js" type="text/javascript"></script>
+<script src="../lib/multiplechoice/v12/js/multiplechoice.min.js" type="text/javascript"></script>
+
+<!--course/lesson javascript (slideshow slide js too)-->
+<script src="js/rr3.pcs.js" type="text/javascript"></script>
+<script>
+	$(function(){
+		if(PCS && typeof PCS.runScriptForSlide === 'function'){
+			PCS.runScriptForSlide(15, $('#slideScroll'));
+		}
+		if ($('.description').height()) {
+			//code	
+			$('.written_example').css('height',$('.description').height());
+		}
+	});
+</script>
+</head>
+
+<body id="RR3-15-NO2">
+
+<div class="description_container">
+	<div class="description">
+		<header><h1>Description</h1></header>
+		<p>This use of the Slide Scroller provides a way for the learner to hear about a situation and then provide answers to follow-up questions. This case has the learner hearing three different situations and assessing the same question about each one provided by a Multiple Choice - One Question at a Time interaction with feedback.</p>
+		<header><h1>Insert directions in the text field:</h1></header>
+		<p>Directions: Click on the play button to listen to the narration, and then [insert exercise directions, i.e. answer the multiple-choice question by clicking on the correct answer]. When you are ready to move to the next slide, click on the arrow.</p>
+		<header><h1>Insert description copy in the UMN interaction field:</h1></header>
+		<p>Interaction type: slidescroller - using eduquery interactions</p>
+		<p>Description: The learner scrolls through a narrated slideshow, and then completes [insert exercise].</p>
+	</div>	
+	<div class="written_example">
+		<header><h1>Interaction Write-up of this example for the UMN interaction field</h1></header>
+		<p>Slide #1: When you are ready to start, click the right arrow button.
+			<br/>
+			Slide #2:
+			<br/>
+			Script (character description, if any): Lola has been working with me for over 2 years. She has 4 of her children living with her and is often preoccupied with their issues when she comes to work. She does the best she can when she&#39;s here, but she&#39;s always complaining about how much work she has to do at home with her kids. She talks about how hard it is to &#39;run&#39; two households since she also works for me. A couple of times I&#39;ve even heard her mutter that I should consider myself lucky to have her helping me, because not everyone can get help at home like I do.
+			<br/>
+			<br/>
+			Interaction: Multiple Choise - One Question at a time<br/>
+			<br/>
+			<em>Note: Bolded words may be customized to provide further explanation or context to the learner.</em></br>
+			<br/>
+			Decide if what is described in the audio clip shows a kind of abusive behavior.<br/>
+			<br/>
+			Yes [correct] feedback - <strong>You are correct. This constant complaining of the home care provider, and the fact that the person she works for can hear these complaints, could be considered abuse.</strong><br/>
+			No feedback - <strong>Sorry, try another answer.</strong><br/>
+			<br/>
+			Slide #3:<br/>
+			<br/>
+			Script (character description, if any): I&#39;ve had a couple different home care providers in the last few years. I&#39;m becoming less mobile so I need someone who is strong and can lift and transfer me correctly.This last care provider is a middle-aged man from Nigeria. He&#39;s really strong and good at transferring and lifting me, but sometimes we have a hard time talking to each other.He has a really strong accent and he&#39;s still learning English. Sometimes I get confused and feel like we&#39;re talking in different languages, even though he&#39;s speaking English.
+			<br/>
+			<br/>
+			Interaction: Multiple Choise - One Question at a time<br/>
+			<br/>
+			<em>Note: Bolded words may be customized to provide further explanation or context to the learner.</em></br>
+			<br/>
+			Decide if what is described in the audio clip shows a kind of abusive behavior.<br/>
+			<br/>
+			Yes feedback <strong>Sorry, try another answer.</strong><br/>
+			<br/>
+			No [correct] feedback - <strong>Right, this is not abuse. They&rsquo;re having a hard time communicating with each other because the home care provider is still learning English. He&rsquo;s not trying to play mind games or cause mental anguish.</strong><br/>
+			<br/>
+			Slide #4:<br/>
+			<br/>
+			Script (character description, if any):Tanya is a great help to me: she cooks, cleans, and helps me with my personal care. But sometimes I would like to get out of the house and visit my friends. Sometimes I just want to go down to the park and get some fresh air. Other times I&#39;ve told Tanya that I&#39;d like to go with her when she goes grocery shopping, even though I give her a list. But most of the time Tanya doesn&#39;t take me with her shopping, or she&#39;ll suggest staying at home and watching TV instead of going outside. I think she might feel like it&#39;s too much trouble to leave the house with me. I&#39;m constantly telling her that I would like to get out, but it just never happens.<br/>
+			<br/>
+			Interaction: Multiple Choise - One Question at a time<br/>
+			<br/>
+			<em>Note: Bolded words may be customized to provide further explanation or context to the learner.</em></br>
+			<br/>
+			Decide if what is described in the audio clip shows a kind of abusive behavior.<br/>
+			<br/>
+			Yes [correct] feedback - <strong>You are correct. Not letting someone do what he wants to do, such as seeing his friends or going outside, can be considered abuse. Espec.ially if the person has clearly communicated that with his care provider.</strong><br/>
+			<br/>
+			No feedback - <strong>Sorry, try another answer.</strong><br/>
+		</p>
+	</div>
+	<div class="seClear"></div>
+</div>
+
+<!--SLIDESCROLLER STARTS HERE -->
+<div id="scrollerContained" style="width:800px;height:600px;margin:0 auto;border:1px solid #666;">
+
+	<div id="navi">
+		<h1>Abusive Behavior</h1>
+	</div>
+  
+  	<div id="slideScroll">
+		<div id="p1" class="panel">
+			<div class="OneColumn">
+				<h1>When you are ready to start, click the right arrow button.</h1>
+			</div>
+        	
+            <div class="controls"></div>
+        </div>
+        
+        <div id="p2" class="panel">
+				
+			<div class="captioned-audio">
+				<h1>Listen to the audio clip.</h1>
+			</div>
+			
+			<div id="multiplechoice1" class="multiplechoice">
+				
+				<div class="message" tabindex="0">
+					<h1>Follow the directions below.</h1>
+				</div>
+				
+				<div class="mc_knowledgebank">
+					<ul class="mc_kb_group_list">
+						<li class="mc_kb_group">
+							<h3 class="mc_question">Decide if what is described in the audio clip shows a kind of abusive behavior.</h3>
+							<ul>
+								<li class="mc_item_correct" data-feedback="You are correct. This constant complaining of the home care provider, and the fact that the person she works for can hear these complaints, could be considered abuse."><span class="answer_type">[correct]</span>Yes</li>
+								<li data-feedback="Sorry, try another answer."><span class="answer_type"></span>No</li>								
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			
+            <div class="controls"></div>
+        </div>
+        
+        <div id="p3" class="panel">
+				
+			<div class="captioned-audio">
+				<h1>Listen to the audio clip.</h1>
+			</div>
+			
+			<div id="multiplechoice2" class="multiplechoice">
+				
+				<div class="message" tabindex="0">
+					<h1>Follow the directions below.</h1>
+				</div>
+				
+				<div class="mc_knowledgebank">
+					<ul class="mc_kb_group_list">
+						<li class="mc_kb_group">
+							<h3 class="mc_question">Decide if what is described in the audio clip shows a kind of abusive behavior.</h3>
+							<ul>
+								<li data-feedback="Sorry, try another answer."><span class="answer_type"></span>Yes</li>
+								<li class="mc_item_correct" data-feedback="Right, this is not abuse. They&rsquo;re having a hard time communicating with each other because the home care provider is still learning English. He&rsquo;s not trying to play mind games or cause mental anguish."><span class="answer_type">[correct]</span>No</li>								
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			
+            <div class="controls"></div>
+        </div>
+		
+		<div id="p4" class="panel">
+				
+			<div class="captioned-audio">
+				<h1>Listen to the audio clip.</h1>
+			</div>
+			
+			<div id="multiplechoice3" class="multiplechoice">
+				
+				<div class="message" tabindex="0">
+					<h1>Follow the directions below.</h1>
+				</div>
+				
+				<div class="mc_knowledgebank">
+					<ul class="mc_kb_group_list">
+						<li class="mc_kb_group">
+							<h3 class="mc_question">Decide if what is described in the audio clip shows a kind of abusive behavior.</h3>
+							<ul>
+								<li class="mc_item_correct" data-feedback="You are correct. Not letting someone do what he wants to do, such as seeing his friends or going outside, can be considered abuse. Especially if the person has clearly communicated that with his care provider."><span class="answer_type">[correct]</span>Yes</li>
+								<li data-feedback="Sorry, try another answer."><span class="answer_type"></span>No</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+			
+            <div class="controls"></div>
+        </div>
+	</div><!--END #slideScroll-->
+	
+</div>
+
+</body>
+
+</html>

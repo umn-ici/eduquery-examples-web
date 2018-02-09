@@ -1,0 +1,16 @@
+1
+00:00:00,086 --> 00:00:03,116
+Part of my job as a provider for Samuel is to do his shopping.
+
+2
+00:00:03,656 --> 00:00:08,786
+Samuel likes steel cut oatmeal because it lowers his cholesterol, but it's more difficult to cook
+
+3
+00:00:08,786 --> 00:00:10,916
+and it's hard to wash the pan afterwards.
+
+4
+00:00:10,916 --> 00:00:15,926
+So sometimes I substitute instant oatmeal and tell Samuel they were out of steel cut oatmeal.
+

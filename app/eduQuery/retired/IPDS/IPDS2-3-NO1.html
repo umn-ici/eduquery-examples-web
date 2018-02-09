@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Matching exercise</title>
+
+<!--lib css-->
+<link href="../lib/util/iniframe.css" rel="stylesheet" type="text/css">
+
+<!--course/lesson css-->
+<link href="css/course.css" rel="stylesheet" type="text/css">
+<link href="css/instance.ipds2.css" rel="stylesheet" type="text/css">
+
+<!--lib javascript-->
+<script src="../lib/jquery/jquery-1.7.min.js" type="text/javascript"></script>
+
+<!--course/lesson javascript-->
+<script src="js/ipds2.pcs.js" type="text/javascript"></script>
+<script>
+	$(function(){
+		if(PCS && typeof PCS.runScriptForSlide === 'function'){
+			PCS.runScriptForSlide(3, $('#info_reveal'));
+		}
+	});
+</script>
+</head>
+
+<body>
+	
+<div id="info_reveal">
+	<div id="message" tabindex="0"><h1>Click the terms to see their descriptions.</h1></div>
+	<dl>
+		<dt>Personal Assets</dt>
+		<dd class="aa1">include your strengths, gifts, talents, and life experiences. You can use these assets when you consider how you would be best supported. An awareness of your personal rights is also an asset.</dd>
+		
+		<dt>Networks</dt>
+		<dd class="aa2">include the people that you know. This means family and friends. These are natural supports.  There are also formal supports. Examples include a case manager, teacher, or health care provider.</dd>
+		
+		<dt>Services</dt>
+		<dd class="aa3">refer to supports or supportive items that are paid for. These include therapies, transportation, home modifications, assistive technologies, health care, education, job assistance, and financial management services. It is important to determine if there are other resources that may pay for participant-directed supports before Medicaid pays.</dd>
+		
+		<dt>Support Brokers</dt>
+		<dd class="aa4">play an important role. The primary function is to help you build connections with people or organizations that can provide supports. This involves assisting with paperwork and planning. It also means acting as a liaison between you and financial management services.</dd>
+	</dl>
+	<div id="info_reveal_graphics">
+		<img src="images/circle4.gif" alt="">
+	</div>
+</div>
+
+</body>
+</html>

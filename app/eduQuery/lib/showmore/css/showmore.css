@@ -1,0 +1,63 @@
+/*! Author: Shawn Lawler (lawl0035@umn.edu) */
+
+.showmore {
+	margin-bottom:2em;
+    font-family:"Trebuchet MS",Arial,Helvetica,sans-serif}
+.showmore dt {
+	margin-top:15px;}
+.showmore dt a:after {
+    content: " click to show more";
+    color:#87c7ff;}
+.showmore dt a, .showmore dd {
+	padding:5px 15px !important;}
+
+.showmore dt a {
+	display:block;
+	margin:0 !important;
+	text-decoration:none;
+	color:#fff !important;
+	border:2px solid #1b66aa !important;
+	border-radius:9px !important;
+	-moz-border-radius:9px !important;
+	-webkit-border-radius:9px !important;
+	background-color:#1b66aa !important;}
+.showmore dt a:hover,
+.showmore dt a:focus {
+    padding-left:20px !important;}
+
+.showmore dt.showmore-show {
+    font-style:italic;}
+    
+.showmore dt.showmore-show a {
+	/*border-bottom-width:1px;*/
+	border-radius:9px 9px 0 0 !important;
+	-moz-border-radius:9px 9px 0 0 !important;
+	-webkit-border-radius:9px 9px 0 0 !important;}
+.showmore dt.showmore-show a:hover,
+.showmore dt.showmore-show a:focus {
+    padding-left:15px;}
+.showmore dt.showmore-show a:after {
+    content: "";}
+
+.showmore dd {
+	margin-left:0;
+	border:2px solid orange;
+	border-top-width:0;
+	border-radius:0 0 9px 9px;
+	-moz-border-radius:0 0 9px 9px;
+	-webkit-border-radius:0 0 9px 9px;
+	background-color:#f3f3f3;}
+.showmore-ui dd {display:none;}
+
+
+/* ==========================================================================
+   Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+
+@media only screen and (min-width: 605px) {
+	.showmore {
+        width:600px;}
+}
