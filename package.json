@@ -1,7 +1,7 @@
 {
   "name": "eduquery-examples-web",
   "version": "1.0.0",
-  "description": "Web home for eduQuery documentation written for Direct Course authors.",
+  "description": "Web home for eduQuery examples and documentation written for Direct Course authors.",
   "main": "index.js",
   "scripts": {
     "build": "gulp",
