@@ -21,7 +21,7 @@ const paths = {
 const phpAuthHeader = '<?php require "inc/auth.php"; ?>';
 
 gulp.task('clean:dist', function() {
-  return del.sync('dist');
+  return del.sync(['dist/**', '!dist']);
 })
 
 gulp.task('index', function(){
