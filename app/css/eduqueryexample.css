@@ -59,7 +59,8 @@
   font-size: 1em;
 }
 
-strong {
+.description strong,
+.written_example strong {
   font-size: 1.2em;
 }
 
