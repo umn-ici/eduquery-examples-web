@@ -32,11 +32,6 @@ dt, dd p {
   padding: 0 20px;
 }
 
-.controls ul {
-  width: 510px;
-  margin: 0 auto;
-}
-
 .controls {
   padding: 0 20px;
   overflow: hidden;
@@ -46,12 +41,14 @@ dt, dd p {
 
 .controls ul {
   list-style-type: none;
+  position: relative;
+  width: 510px;
+  margin: 0 auto;
   padding: 0;
   overflow: hidden;
-  position: relative;
 }
 
-.controls li {
+.controls ul li {
   margin: 15px 10px 15px 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 10pt;
@@ -65,21 +62,20 @@ dt, dd p {
   *display: inline;
 }
 
-.controls li a {
+.controls ul li a {
   display: block;
   min-height: 112px;
-  padding: 10px;
 }
 
-.controls li a:hover, .controls li a:focus {
+.controls ul li a:hover, .controls ul li a:focus {
   background-color: #F5F5DF;
 }
 
-.controls li a.current {
+.controls ul li a:hover.current, .controls ul li a:focus.current {
   background-color: white;
 }
 
-.controls li a.current:hover, .controls li a.current:focus, .controls li a.current:active {
+.controls ul li a:hover.current:hover, .controls ul li a:hover.current:focus, .controls ul li a:hover.current:active, .controls ul li a:focus.current:hover, .controls ul li a:focus.current:focus, .controls ul li a:focus.current:active {
   background-color: white;
 }
 
@@ -116,7 +112,8 @@ dd p {
   font-family: monospace;
 }
 
-.key dd, .key p {
+.key dd,
+.key p {
   margin-bottom: 0;
 }
 
