@@ -1,3 +1,5 @@
+@import './partials/color';
+
 .description_container {
   box-sizing:border-box;
   width:100%;
@@ -5,7 +7,7 @@
   padding-bottom: 20px;
   font-family:Arial, Helvetica, sans-serif !important;
   border-bottom:3px dashed #999;
-  background-color:#F5F5DF;
+  background-color:$active-example-bg;
 
   * {
     box-sizing:inherit;
@@ -40,7 +42,7 @@
   width:25%;
   float:left;
   padding-left:10px;
-  background-color:#fff;
+  background-color:$active-example-bg;
   display: inline-block;
 
   p {
@@ -53,7 +55,7 @@
   float: left;
   display: inline-block;
   padding-left:10px;
-  background-color:#fff;
+  background-color:$active-example-bg;
   overflow: auto;
 
   p {

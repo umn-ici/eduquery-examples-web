@@ -75,8 +75,12 @@ dt, dd p {
   background-color: #F5F5DF;
 }
 
-.current {
-  background-color: #F5F5DF;
+.controls li a.current {
+  background-color: white;
+}
+
+.controls li a.current:hover, .controls li a.current:focus, .controls li a.current:active {
+  background-color: white;
 }
 
 dt {
@@ -143,7 +147,7 @@ h1 {
 /*Box container for eduQuery example iframe*/
 #boxy {
   padding-top: 20px;
-  background-color: #F5F5DF;
+  background-color: white;
 }
 
 a#close {
