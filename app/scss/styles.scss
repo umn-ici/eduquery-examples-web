@@ -153,12 +153,12 @@ a#close {
 	width:300px;
 	margin:10px auto;
 	border:2px solid #df0000;
-	background-color:#fff;
-	color:#df0000;
+  background-color:#df0000;
+  color:#fff;
 
   &:hover,
   &:focus {
-    background-color:#df0000;
-    color:#fff;
+    background-color:#fff;
+    color:#df0000;
   }
 }
