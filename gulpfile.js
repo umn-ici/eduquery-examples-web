@@ -82,7 +82,7 @@ gulp.task('php-includes', function() {
 });
 
 // Rerun the task when a file changes 
-gulp.task('watch', function() {
+gulp.task('watch', ['sass-dev'], function() {
   gulp.watch(paths.scss, ['sass-dev']);
 });
 
