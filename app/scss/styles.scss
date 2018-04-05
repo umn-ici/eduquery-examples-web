@@ -7,7 +7,14 @@ body {
 	font-size:1.5em;
 	background-color:#97cc3a;
 	/*background: url('../images/bg.gif') repeat top;*/}
-h1 {color:#fff;}
+header {
+  max-width:960px;
+  margin-left:auto;
+  margin-right:auto;
+  h1 {
+    color:#fff;
+  }
+}
 iframe {
 	background-color:#fff;}
 

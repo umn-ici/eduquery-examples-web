@@ -1,10 +1,15 @@
 .description_container {
+  box-sizing:border-box;
   width:100%;
   margin: auto 0 20px;
   padding-bottom: 20px;
   font-family:Arial, Helvetica, sans-serif !important;
   border-bottom:3px dashed #999;
   background-color:#F5F5DF;
+
+  * {
+    box-sizing:inherit;
+  }
 
   h1 {
     margin:0;
@@ -32,9 +37,9 @@
 
 
 .description {
-  width:36%;
+  width:25%;
   float:left;
-  margin-left:10px;
+  padding-left:10px;
   background-color:#fff;
   display: inline-block;
 
@@ -44,10 +49,10 @@
 }
 
 .written_example {
-  width:61%;
+  width:75%;
   float: left;
   display: inline-block;
-  margin-left:10px;
+  padding-left:10px;
   background-color:#fff;
   overflow: auto;
 
@@ -55,10 +60,6 @@
     font-family: monospace;
     font-size: 1em;
   }
-}
-
-strong{
-  font-size: 1.2em;
 }
 
 .seClear {

@@ -11,7 +11,13 @@ body {
   /*background: url('../images/bg.gif') repeat top;*/
 }
 
-h1 {
+header {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header h1 {
   color: #fff;
 }
 

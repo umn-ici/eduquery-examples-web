@@ -1,10 +1,15 @@
 .description_container {
+  box-sizing: border-box;
   width: 100%;
   margin: auto 0 20px;
   padding-bottom: 20px;
   font-family: Arial, Helvetica, sans-serif !important;
   border-bottom: 3px dashed #999;
   background-color: #F5F5DF;
+}
+
+.description_container * {
+  box-sizing: inherit;
 }
 
 .description_container h1 {
@@ -34,9 +39,9 @@
 }
 
 .description {
-  width: 36%;
+  width: 25%;
   float: left;
-  margin-left: 10px;
+  padding-left: 10px;
   background-color: #fff;
   display: inline-block;
 }
@@ -46,10 +51,10 @@
 }
 
 .written_example {
-  width: 61%;
+  width: 75%;
   float: left;
   display: inline-block;
-  margin-left: 10px;
+  padding-left: 10px;
   background-color: #fff;
   overflow: auto;
 }
@@ -57,11 +62,6 @@
 .written_example p {
   font-family: monospace;
   font-size: 1em;
-}
-
-.description strong,
-.written_example strong {
-  font-size: 1.2em;
 }
 
 .seClear {
