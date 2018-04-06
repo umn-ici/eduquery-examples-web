@@ -66,29 +66,20 @@
 	});
 })();
 
-(function(){
-	//get all the controls
-	var $controls = $('.controls a');
-
-	//give each an id and then add that id to an array
-	//attach a listener to each - the listener will 
-})();
-
-var interactiveExample = function($activatingControl) {
+var InteractiveExample = function(activating_control_id) {
 	//create reusable interaction box
-	var $interactionBox = $('<div class="boxy"><a href="" class="close">Close this example</a><iframe src="" width="100% height="1px" frameborder="0" scrolling="no"/></iframe></div>');
+	var $interaction_box = $('<div class="boxy"><a href="" class="close">Close this example</a><iframe src="" width="100% height="1px" frameborder="0" scrolling="no"/></iframe></div>');
 
 	// initialize
-	this.$activatingControl = $activatingControl;
-	this.init($activatingControl);
+	this.$activating_control = $(activating_control_id);
+	this.init();
 };
 
-interactiveExample.prototype.init = {
-  // set the control that was clicked to visually current
-  this.$activatingControl.addClass('current');
-	
-  this.$boxy = $interactionBox.clone();
+InteractiveExample.prototype.init = {
+	this.$boxy = $interaction_box.clone();
   this.$iframe = $boxy.find('iframe');
+  this.path = $activating_control.attr('href') + '?bool=1';
+	this.iframeHeight = $activating_control.attr('data-height');
 
   //listener for close control
 	this.$boxy.find('.close').eq(0).on('click.interactionBox', function(e){
@@ -97,9 +88,11 @@ interactiveExample.prototype.init = {
 		//animate it to 1px tall and remove
 		this.$iframe.animate({"height" : "1px"}, 500, this.suspend);
 	});
+
+	this.activate();
 };
 
-interactiveExample.prototype.suspend = {
+InteractiveExample.prototype.suspend = {
 	//neutralize the iframe
 	this.$iframe.attr('src', '');
 	
@@ -110,8 +103,57 @@ interactiveExample.prototype.suspend = {
 	$refToControl.removeClass('current');
 };
 
-interactiveExample.prototype.reheat = {
-	//reset control to current
-	//repopulate the iframe
-	//reattach boxy
+InteractiveExample.prototype.activate = {
+	//set control to current
+	this.$activating_control.addClass('current');
+	//set the iframe path to interaction url
+	this.$iframe.attr('src', path);
+	//attach boxy
+	this.$activating_control.closest('dd').append(this.$boxy);
 };
+
+(function(){
+	//get all the controls
+	var $controls = $('.controls a');
+	var instances = [];
+
+	$controls.each(function(index){
+		//give each an id and then add that id to an array
+		var uid = 'c'+index;
+		$(this).attr('id', id);
+		instances.push({
+			id : uid,
+			instance : null
+		});
+	});
+
+	$('.main').eq(0).on('EDUQUERYEXAMPLES.click', '.controls a', function(e){
+		e.preventDefault();
+		var $target = $(event.target);
+		var target_id = $target.attr('id');
+		for(var i=0;i<instances.length;i++){
+			if(instances[i].id === target_id){
+				if(!instances[i].instance){
+					instances[i].instance = new InteractiveExample(target_id);
+				}
+				else {
+					if($target.hasClass('current')){
+						instances[i].instance.suspend();
+					}
+					else {
+						instances[i].instance.reheat();
+					}
+				}
+			}
+		}
+	});
+
+	function objWithIdIsInArray(arr, uid) {
+		for(var i=0;i<arr.length;i++){
+			if(arr[i].id === uid){
+				return true;
+			}
+		}
+		return false;
+	}
+})();
