@@ -5,6 +5,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const replace = require('gulp-string-replace');
 const del = require('del');
 const gap = require('gulp-append-prepend');
+const jslint = require('gulp-jslint');
 
 //usage gulp.src(paths.scripts)
 const paths = {
@@ -13,6 +14,7 @@ const paths = {
   eduquerySupportingFiles: ['app/eduQuery/**','!app/eduQuery/**/*.{html,htm}'],
   images: 'app/img/*.{jpg,png,gif}',
   js: 'app/js/**/*.js',
+  js_dev: 'app/js/the_sampler_cometh.js',
   scss: 'app/scss/*.scss',
   includes: 'app/inc/*.php',
   out: 'dist'
@@ -62,16 +64,23 @@ gulp.task('sass', function() {
     .pipe(gulp.dest(paths.out + '/css'));
 });
 
+gulp.task('js-dev', function() {
+  return gulp.src([paths.js_dev], { base: 'app' })
+    .pipe(jslint())
+    //.pipe(jslint.reporter('default', errorsOnly))
+    .pipe(jslint.reporter('stylish'));
+});
+
 gulp.task('sass-dev', function() {
   return gulp.src(paths.scss)
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(gulp.dest('app/css'));
 });
 
-// Copy all static images 
+// Copy all static images
 gulp.task('images', function() {
   return gulp.src(paths.images, { base: 'app' })
-    // Pass in options to the task 
+    // Pass in options to the task
     //.pipe(imagemin({optimizationLevel: 5}))
     .pipe(gulp.dest(paths.out));
 });
@@ -81,7 +90,7 @@ gulp.task('php-includes', function() {
     .pipe(gulp.dest(paths.out));
 });
 
-// Rerun the task when a file changes 
+// Rerun the task when a file changes
 gulp.task('watch', ['sass-dev'], function() {
   gulp.watch(paths.scss, ['sass-dev']);
 });
