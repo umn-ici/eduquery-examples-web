@@ -101,8 +101,12 @@ dt {
 	border-radius:21px 21px 0 0;
 	-moz-border-radius:21px 21px 0 0;
 	-webkit-border-radius:21px 21px 0 0;
-  font-weight:900;
-  font-size:1.3em;
+
+  h2 {
+    margin:0;
+    font-weight:900;
+    font-size:1.3em;
+  }
 }
 dd {
 	margin-left:0;
