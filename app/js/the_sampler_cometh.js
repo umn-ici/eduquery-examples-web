@@ -21,7 +21,10 @@ InteractiveExample.prototype.init = function(){
   this.boxy_iframe = this.boxy.find('iframe');
   this.path = this.activating_control.attr('href');
   this.iframe_height = this.activating_control.attr('data-height');
-  this.close_button = this.boxy.find('.close')
+  this.close_button = this.boxy.find('.close');
+
+  //add link text as a heading to boxy
+  this.boxy.prepend('<h3>'+ this.activating_control.text() +'</h3>');
 
   //listener for close control
   this.close_button.on('click.INTERACTIVEEXAMPLE', jQuery.proxy(function(e){

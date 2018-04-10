@@ -38,7 +38,7 @@ dt, dd p {
   ul {
     list-style-type: none;
     position: relative;
-    width:510px;
+    width:960px;
     margin:0 auto;
     padding:0;
     overflow: hidden;
@@ -165,11 +165,18 @@ h1 {
   border-radius:30px;
   -moz-border-radius:30px;
   -webkit-border-radius:30px;
+  text-align:center;
+
+  h3 {
+    display:inline;
+    font-size:1em;
+    font-weight:900;
+  }
 
   a.close {
-    display:block;
+    display:inline-block;
     width:300px;
-    margin:10px auto;
+    margin-left:20px;
     border:2px solid #df0000;
     background-color:#df0000;
     color:#fff;
@@ -183,5 +190,6 @@ h1 {
 
   iframe {
     height:1px;
+    margin-top:50px;
   }
 }
