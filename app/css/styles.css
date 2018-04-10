@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,900");
 body, html {
   height: 100%;
   margin: 0;
@@ -5,9 +6,9 @@ body, html {
 }
 
 body {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  font-size: 1.5em;
-  background-color: #97cc3a;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  /* background-color:#97cc3a; */
   /*background: url('../images/bg.gif') repeat top;*/
 }
 
@@ -18,7 +19,7 @@ header {
 }
 
 header h1 {
-  color: #fff;
+  /* color:#fff; */
 }
 
 iframe {
@@ -27,7 +28,7 @@ iframe {
 
 /*faux center column*/
 dt, dd p {
-  width: 500px;
+  width: 960px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -36,7 +37,7 @@ dt, dd p {
   padding: 0 20px;
   overflow: hidden;
   position: relative;
-  background-color: #d4f39f;
+  margin-bottom: 50px;
 }
 
 .controls ul {
@@ -53,7 +54,7 @@ dt, dd p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 10pt;
   display: inline-block;
-  width: 120px;
+  width: 150px;
   margin: 0;
   min-height: 100px;
   vertical-align: top;
@@ -65,32 +66,45 @@ dt, dd p {
 .controls ul li a {
   display: block;
   min-height: 112px;
+  padding: 15px;
+  border-radius: 21px;
+  -moz-border-radius: 21px;
+  -webkit-border-radius: 21px;
+  background-color: #efefef;
+  border: 1px solid white;
 }
 
 .controls ul li a:hover, .controls ul li a:focus {
-  background-color: #F5F5DF;
+  border: 1px solid #97cc3a;
 }
 
 .controls ul li a:hover.current, .controls ul li a:focus.current {
-  background-color: white;
+  background-color: #97cc3a;
 }
 
 .controls ul li a:hover.current:hover, .controls ul li a:hover.current:focus, .controls ul li a:hover.current:active, .controls ul li a:focus.current:hover, .controls ul li a:focus.current:focus, .controls ul li a:focus.current:active {
-  background-color: white;
+  background-color: #97cc3a;
+}
+
+.controls ul li a.current {
+  background-color: #97cc3a;
+  border: 1px solid #97cc3a;
 }
 
 .controls ul li a img {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 7px auto;
 }
 
 dt {
   padding-top: 10px;
-  background-color: #d4f39f;
+  /* background-color:#d4f39f; */
   border: 0px solid #fff;
   border-radius: 21px 21px 0 0;
   -moz-border-radius: 21px 21px 0 0;
   -webkit-border-radius: 21px 21px 0 0;
+  font-weight: 900;
+  font-size: 1.3em;
 }
 
 dd {
@@ -105,7 +119,7 @@ dd p {
   font-size: .7em;
   font-style: italic;
   color: #333;
-  background-color: #d4f39f;
+  /* background-color:#d4f39f; */
 }
 
 .key {
@@ -143,12 +157,16 @@ h1 {
 }
 
 /*Box container for eduQuery example iframe*/
-#boxy {
-  padding-top: 20px;
-  background-color: white;
+.boxy {
+  margin: 20px 20px 50px;
+  padding: 20px;
+  border: 20px solid #97cc3a;
+  border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
 }
 
-a#close {
+.boxy a.close {
   display: block;
   width: 300px;
   margin: 10px auto;
@@ -157,7 +175,11 @@ a#close {
   color: #fff;
 }
 
-a#close:hover, a#close:focus {
+.boxy a.close:hover, .boxy a.close:focus {
   background-color: #fff;
   color: #df0000;
+}
+
+.boxy iframe {
+  height: 1px;
 }

@@ -1,20 +1,21 @@
 @import './partials/color';
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,900');
 
 body, html {
 	height:100%;
 	margin:0;
 	padding:0;}
 body {
-	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size:1.5em;
-	background-color:#97cc3a;
+	font-family: 'Raleway', sans-serif;
+	font-size:2em;
+	/* background-color:#97cc3a; */
 	/*background: url('../images/bg.gif') repeat top;*/}
 header {
   max-width:960px;
   margin-left:auto;
   margin-right:auto;
   h1 {
-    color:#fff;
+    /* color:#fff; */
   }
 }
 iframe {
@@ -23,7 +24,7 @@ iframe {
 
 /*faux center column*/
 dt, dd p {
-	width:500px;
+	width:960px;
 	margin:0 auto;
 	padding:0 20px;
 }
@@ -32,7 +33,7 @@ dt, dd p {
   padding:0 20px;
   overflow: hidden;
   position: relative;
-  background-color:#d4f39f;
+  margin-bottom:50px;
 
   ul {
     list-style-type: none;
@@ -44,10 +45,10 @@ dt, dd p {
 
     li {
       margin: 15px 10px 15px 10px;
-      font-family:Arial, Helvetica, sans-serif; 
+      font-family:Arial, Helvetica, sans-serif;
       font-size: 10pt;
       display: inline-block;
-      width:120px;
+      width:150px;
       margin:0;
       min-height: 100px;
       vertical-align: top;
@@ -58,10 +59,16 @@ dt, dd p {
        a {
         display:block;
         min-height:112px;
-        
+        padding:15px;
+        border-radius:21px;
+        -moz-border-radius:21px;
+        -webkit-border-radius:21px;
+        background-color:#efefef;
+        border:1px solid white;
+
         &:hover,
         &:focus {
-          background-color:#F5F5DF;
+          border:1px solid #97cc3a;
 
           &.current {
             background-color:$active-example-bg;
@@ -73,9 +80,14 @@ dt, dd p {
           }
         }
 
+        &.current {
+          background-color:$active-example-bg;
+          border:1px solid #97cc3a;
+        }
+
         img {
           display:block;
-          margin:0 auto;
+          margin:0 auto 7px auto;
         }
       }
     }
@@ -84,11 +96,13 @@ dt, dd p {
 
 dt {
 	padding-top:10px;
-  background-color:#d4f39f;
+  /* background-color:#d4f39f; */
 	border:0px solid #fff;
 	border-radius:21px 21px 0 0;
 	-moz-border-radius:21px 21px 0 0;
 	-webkit-border-radius:21px 21px 0 0;
+  font-weight:900;
+  font-size:1.3em;
 }
 dd {
 	margin-left:0;
@@ -101,7 +115,7 @@ dd {
     font-size:.7em;
     font-style: italic;
     color:#333;
-    background-color:#d4f39f;
+    /* background-color:#d4f39f; */
   }
 }
 
@@ -140,21 +154,30 @@ h1 {
 }
 
 /*Box container for eduQuery example iframe*/
-#boxy {
-	padding-top:20px;
-	background-color:$active-example-bg;
-}
-a#close {
-	display:block;
-	width:300px;
-	margin:10px auto;
-	border:2px solid #df0000;
-  background-color:#df0000;
-  color:#fff;
+.boxy {
+  margin:20px 20px 50px;
+	padding:20px;
+  border:20px solid #97cc3a;
+  border-radius:30px;
+  -moz-border-radius:30px;
+  -webkit-border-radius:30px;
 
-  &:hover,
-  &:focus {
-    background-color:#fff;
-    color:#df0000;
+  a.close {
+    display:block;
+    width:300px;
+    margin:10px auto;
+    border:2px solid #df0000;
+    background-color:#df0000;
+    color:#fff;
+
+    &:hover,
+    &:focus {
+      background-color:#fff;
+      color:#df0000;
+    }
+  }
+
+  iframe {
+    height:1px;
   }
 }
