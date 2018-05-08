@@ -1,0 +1,260 @@
+/*links to direct course glossary*/
+a.dc-glossary {
+    color:blue;
+    text-decoration:none;
+    border-bottom:1px solid blue;
+}
+a.dc-glossary:hover,
+a.dc-glossary:focus {
+    color:maroon;
+    border-color:maroon;
+}
+a.dc-glossary:visited {
+    color:purple;
+    border-color:purple;
+}
+
+/*Pull Quote tweeks*/
+#pull-quote .firstcharacter {
+    line-height: .8em;
+}
+#pull-quote {
+    font-family: 'Open Sans',Arial,sans-serif;
+}
+#pull-quote h1,
+#pull-quote h2 {
+    color:#273e4e;
+}
+
+/*Matching*/
+.matching {
+    width:842px;
+    margin:0 auto;
+    border:1px solid #ccc;
+}
+.answer_area a {
+    background-image:url(../images/open_box.gif);
+    background-position:0 0;
+    background-repeat: no-repeat;
+}
+.answer_area .area_title {
+    margin-left:35px;
+    padding-top:5px !important;
+}
+
+/*slide scroller and panel content general tweeks*/
+.panel p.buttonish > a {
+    display: block; 
+    margin: 1.25em auto;
+    padding: 1px 5px;
+    border-radius: 9px;
+    border: 1px solid;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    background-color:#FFF2DB;}
+.panel p.buttonish > a:hover,
+.panel p.buttonish > a:focus {
+    background-color: #ffbb8c;}
+
+p.buttonish > a {
+    display: block; 
+    margin: 1.25em auto;
+    padding: 1px 5px;
+    border-radius: 9px;
+    border: 1px solid;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    background-color:#FFF2DB;}
+p.buttonish > a:hover,
+p.buttonish > a:focus {
+    background-color: #ffbb8c;}
+
+.scroller-view .panel {
+    padding: 30px 60px 15px;
+    line-height: 1.5em;
+}
+.scroller-view .panel .captioned-audio,
+.scroller-view .panel .captioned-video,
+.scroller-view .panel .imgHolder {
+    text-align: center; 
+    min-height: 66px;
+}
+.scroller-view .panel iframe {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.scroller-view .panel img {
+    display: inline-block;
+    margin: 0 0 1em 1em;
+    float:right;
+}
+.scroller-view .panel p > img {
+    display: block;
+    margin: 1em auto;
+    float:none;
+}
+.scroller-view .panel p.full-line-image {
+    text-align:center;
+}
+.scroller-view .panel p.full-line-image img {
+    display:inline;
+    margin:0 auto;
+    float:none;
+}
+
+.OneColumn {
+    width:85%;
+    margin:0 auto;
+}
+.panel .col-wrap {
+    width:85%;
+    margin:1em auto;
+    overflow:hidden;
+}
+.TwoColumn1,
+.TwoColumn2 {
+    width:47.75%;
+}
+.TwoColumn1 {
+    margin-left:0;
+    margin-right:4%;
+}
+.TwoColumn2 {
+    margin-right:0;
+}
+.OneColumn,
+.TwoColumn1,
+.TwoColumn2 {
+    font-size:1.2em;
+}
+
+.ThreeColumn1,
+.ThreeColumn2,
+.ThreeColumn3 {
+    width:31.75%;
+    margin:0 .5%;
+    float:left;
+}
+
+.panel h2 {
+    margin-bottom:25px;
+    margin-top:25px;
+    color:#465E9C;
+    font-size:36px;
+    line-height: 1.4em;
+}
+.MainTitle {
+    border-bottom: 2px solid #fda023;
+    padding-bottom: 25px;
+}
+.panel p {
+    line-height: 1.3em;
+}
+.scroller-view .panel .OneColumn > ul,
+.scroller-view .panel .col-wrap ul {
+    list-style-type: none;
+}
+.scroller-view .panel .col-wrap ul {
+    margin-left:0;
+    padding-left:0;
+}
+.panel ol {
+    list-style: decimal;
+}
+.scroller-view .panel .OneColumn > ul li,
+.scroller-view .panel .col-wrap ul li {
+    position:relative;
+    margin-bottom: .5em;
+    padding-left: 1em;
+    line-height: 1.4em;
+}
+.scroller-view .panel .col-wrap ul li {
+    margin-bottom:.3em;
+    line-height: 1.1em;
+}
+.scroller-view .panel .OneColumn > ul li:before,
+.scroller-view .panel .col-wrap ul li:before {
+    position:absolute;
+    top:1px;
+    left:0;
+    content: "\002022";
+    color: #FDA023;
+    font-size: 1.5em;
+}
+
+/*multiple choice in slidescroller*/
+.mc_knowledgebank li {
+    padding:2px 0;
+}
+
+
+/*custom showmore with image*/
+.two-col-showmore {
+    width:800px;
+    margin:0 auto;
+    overflow:hidden;
+}
+.two-col-showmore h2 {
+    margin-bottom:25px;
+    margin-top:25px;
+    font-family: 'Open Sans', sans-serif;
+    color:#465E9C;
+    font-size:36px;
+    line-height: 1.4em;}
+.two-col-showmore .col-one {
+    width:361px;
+    margin-right:20px;
+    float:left;
+}
+.two-col-showmore .col-two {
+    width:419px;
+    float:left;
+}
+.two-col-showmore .showmore {
+    width:100%;
+}
+
+
+/*multiple choice tweeks*/
+.multiplechoice_ui {
+    box-sizing:border-box;
+    height:500px;
+    margin:0 auto;
+    padding-top:2em;
+    background-color:#efefef;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(39,62,76,1);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(39,62,76,1);
+    box-shadow: 0px 0px 6px 0px rgba(39,62,76,1);
+    overflow:scroll;
+}
+.multiplechoice_ui .msg_win {
+    padding:2px 0;
+    background-color:green;
+    color:white;
+    font-size:1.2em;
+}
+.multiplechoice_ui .mc_knowledgebank {
+    padding-top:7px;
+    width:95%;
+}
+/*tweeks to multiple choice in slidescroller*/
+.scroller-view .multiplechoice_ui {
+    font-size:.9em;
+}
+.scroller-view .multiplechoice_ui .message h1 {
+    font-size:.8em;
+}
+.scroller-view .mc_knowledgebank .mc_kb_group .q_num {
+    top:-5px;
+    left:-14px;
+    padding:9px 9px 9px 15px;
+}
+.scroller-view .mc_knowledgebank .inactive .q_num,
+.scroller-view .mc_knowledgebank .mc_knowledge .q_num {
+    top:-8px;
+    left:-10px;
+    padding:4px 7px 1px 10px;
+}

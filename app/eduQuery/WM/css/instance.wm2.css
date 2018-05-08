@@ -1,0 +1,25 @@
+#WM2-2-NO1 .two-col-showmore {
+    width:850px;
+}
+
+#WM2-2-NO1 .col-one {
+    width:400px;
+}
+
+#WM2-9-NO1 #multiplechoice {
+    width:770px;
+    height:600px;
+    overflow:visible;
+}
+
+#WM2-9-NO1 #multiplechoice .mc_knowledgebank {
+    width:650px;
+}
+
+#WM2-9-NO1 #scenario1 {
+    height:800px;
+}
+
+#WM2-9-NO1 .narrative-body p {
+    font-size:.7em;
+}
