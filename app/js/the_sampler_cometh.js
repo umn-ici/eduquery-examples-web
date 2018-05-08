@@ -21,7 +21,9 @@ InteractiveExample.prototype.init = function(){
   this.boxy_iframe = this.boxy.find('iframe');
   this.path = this.activating_control.attr('href');
   this.iframe_height = this.activating_control.attr('data-height');
+  this.text_source = this.activating_control.attr('text-script-path');
   this.close_button = this.boxy.find('.close');
+  this.animation_dur = 300;
 
   //add link text as a heading to boxy
   this.boxy.prepend('<h3>'+ this.activating_control.text() +'</h3>');
@@ -31,7 +33,7 @@ InteractiveExample.prototype.init = function(){
     e.preventDefault();
 
     //animate it to 1px tall and suspend
-    this.boxy_iframe.animate({"height" : "1px"}, 1000, jQuery.proxy(this.suspend, this));
+    this.boxy_iframe.animate({"height" : "1px"}, this.animation_dur, jQuery.proxy(this.suspend, this));
   }, this));
 
   this.activate();
@@ -47,10 +49,14 @@ InteractiveExample.prototype.activate = function(){
   this.activating_control.addClass('current');
   //set the iframe path to interaction url
   this.boxy_iframe.attr('src', p);
+  //add link to text write up of interaction if one doesn't already exist.
+  if(this.boxy.find('.link-to-text').length === 0) {
+    this.boxy.append('<div class="link-to-text"><h4>Thinking about using this interaction type in your course?</h4><a href="'+ this.text_source +'" target="_blank">Check out the text write-up of the interactive example above</a></div>');
+  }
   //attach boxy
   this.activating_control.closest('dd').append(this.boxy);
   //animate open
-  this.boxy_iframe.animate({"height" : this.iframe_height+"px"}, 1000);
+  this.boxy_iframe.animate({"height" : this.iframe_height+"px"}, this.animation_dur);
 };
 
 InteractiveExample.prototype.suspend = function(){
