@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,900");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,900");
 body, html {
   height: 100%;
   margin: 0;
@@ -8,8 +8,7 @@ body, html {
 body {
   font-family: 'Raleway', sans-serif;
   font-size: 2em;
-  /* background-color:#97cc3a; */
-  /*background: url('../images/bg.gif') repeat top;*/
+  font-weight: 300;
 }
 
 header {
@@ -22,18 +21,31 @@ header h1 {
   /* color:#fff; */
 }
 
+h2 {
+  margin: 0;
+  font-weight: 900;
+  font-size: 1.3em;
+}
+
+h3, h4 {
+  margin: 0;
+  font-weight: 900;
+  font-size: .7em;
+}
+
 iframe {
   background-color: #fff;
 }
 
 /*faux center column*/
-dt, dd p {
+dt, .interaction-type-details, .controls {
   width: 960px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 .controls {
+  box-sizing: border-box;
   padding: 0 20px;
   overflow: hidden;
   position: relative;
@@ -98,17 +110,10 @@ dt, dd p {
 
 dt {
   padding-top: 10px;
-  /* background-color:#d4f39f; */
   border: 0px solid #fff;
   border-radius: 21px 21px 0 0;
   -moz-border-radius: 21px 21px 0 0;
   -webkit-border-radius: 21px 21px 0 0;
-}
-
-dt h2 {
-  margin: 0;
-  font-weight: 900;
-  font-size: 1.3em;
 }
 
 dd {
@@ -117,13 +122,28 @@ dd {
   margin-right: 0;
 }
 
-dd p {
+dd .interaction-type-details {
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+dd .interaction-type-details ul {
+  margin-top: 0;
+  margin-bottom: .5em;
+}
+
+dd .interaction-type-details p, dd .interaction-type-details li {
+  margin-top: 0;
   margin-bottom: 0;
   padding-bottom: .5em;
   font-size: .7em;
   font-style: italic;
   color: #333;
-  /* background-color:#d4f39f; */
+}
+
+dd .interaction-type-details li {
+  padding-bottom: 0;
+  font-style: normal;
 }
 
 .key {
@@ -134,8 +154,7 @@ dd p {
   font-family: monospace;
 }
 
-.key dd,
-.key p {
+.key dd, .key p {
   margin-bottom: 0;
 }
 
@@ -194,4 +213,12 @@ h1 {
 .boxy iframe {
   height: 1px;
   margin-top: 50px;
+}
+
+.boxy .link-to-text a {
+  border-bottom: 1px solid #ccc;
+}
+
+.boxy .link-to-text a:hover, .boxy .link-to-text a:focus {
+  border-color: #000;
 }

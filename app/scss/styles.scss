@@ -1,35 +1,48 @@
 @import './partials/color';
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,900');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,900');
 
 body, html {
 	height:100%;
 	margin:0;
-	padding:0;}
+	padding:0;
+}
 body {
 	font-family: 'Raleway', sans-serif;
 	font-size:2em;
-	/* background-color:#97cc3a; */
-	/*background: url('../images/bg.gif') repeat top;*/}
+  font-weight:300;
+}
 header {
   max-width:960px;
   margin-left:auto;
   margin-right:auto;
+
   h1 {
     /* color:#fff; */
   }
+}
+h2 {
+  margin:0;
+  font-weight:900;
+  font-size:1.3em;
+}
+h3, h4 {
+  margin:0;
+  font-weight:900;
+  font-size:.7em;
 }
 iframe {
 	background-color:#fff;}
 
 
 /*faux center column*/
-dt, dd p {
+dt, .interaction-type-details, .controls {
 	width:960px;
 	margin:0 auto;
 	padding:0 20px;
 }
 
 .controls {
+  box-sizing:border-box;
   padding:0 20px;
   overflow: hidden;
   position: relative;
@@ -96,30 +109,38 @@ dt, dd p {
 
 dt {
 	padding-top:10px;
-  /* background-color:#d4f39f; */
 	border:0px solid #fff;
 	border-radius:21px 21px 0 0;
 	-moz-border-radius:21px 21px 0 0;
 	-webkit-border-radius:21px 21px 0 0;
-
-  h2 {
-    margin:0;
-    font-weight:900;
-    font-size:1.3em;
-  }
 }
 dd {
 	margin-left:0;
 	margin-bottom:1.5em;
 	margin-right:0;
 
-  p {
-    margin-bottom:0;
-    padding-bottom:.5em;
-    font-size:.7em;
-    font-style: italic;
-    color:#333;
-    /* background-color:#d4f39f; */
+  .interaction-type-details {
+    box-sizing:border-box;
+    padding:0 20px;
+
+    ul {
+      margin-top:0;
+      margin-bottom:.5em;
+    }
+
+    p, li {
+      margin-top:0;
+      margin-bottom:0;
+      padding-bottom:.5em;
+      font-size:.7em;
+      font-style: italic;
+      color:#333;
+    }
+
+    li {
+      padding-bottom:0;
+      font-style:normal;
+    }
   }
 }
 
@@ -130,8 +151,7 @@ dd {
   font-size:.8em;
   font-family:monospace;
 
-  dd,
-  p {
+  dd, p {
     margin-bottom:0;
   }
 }
@@ -191,5 +211,16 @@ h1 {
   iframe {
     height:1px;
     margin-top:50px;
+  }
+
+  .link-to-text {
+    a {
+      border-bottom:1px solid #ccc;
+
+      &:hover,
+      &:focus {
+        border-color:#000;
+      }
+    }
   }
 }
