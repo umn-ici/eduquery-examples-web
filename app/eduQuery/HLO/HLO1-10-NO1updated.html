@@ -16,9 +16,6 @@
 <link href="css/course.css" rel="stylesheet" type="text/css">
 <link href="css/instance.hlo1.css" rel="stylesheet" type="text/css">
 
-<!--eduQuery Example css-->
-<link href="../../css/eduqueryexample.css" rel="stylesheet" type="text/css">
-
 <style type="text/css">
 /*.matching_ui {min-height:550px;}*/
 </style>
@@ -31,54 +28,11 @@ $(function(){
 	//optional shuffled statements enabled
 	//var m1 = new Matching($('#matching1'), {'shuffle_statements' : true});
 	m1.setMessage('win', 'Congratulations, you have completed the exercise!');
-
-	if ($('.description').height()) {
-		$('.written_example').css('height',$('.description').height());
-	}
 });
 </script>
 </head>
 
 <body>
-
-<div class="description_container">
-	<div class="description">
-		<header><h1>Description</h1></header>
-		<p>Matching exercise, demonstrating the Typical Use.  User selects a statement by clicking on an item from the statement column and then attempts a match by clicking on one of the answer areas.</p>
-		<header><h1>Insert directions in the text field:</h1></header>
-		<p>Directions: Match each [statement or term] below to the correct category. Begin by clicking on the [statement or term], and then click on the corresponding category.</p>
-	</div>	
-	<div class="written_example">
-		<header><h1>Interaction Write-up of this example for the UMN interaction field</h1></header>
-		<p>
-			<p>Interaction type: eduQuery Matching - typical use</p>
-			<p>Description: The learner matches each [statement or term] to the correct category.</p>
-			<p>The safety of a person&rsquo;s workplace. [Physical Environment]<br/>
-			Item feedback - correct:<strong>&quot;Correct!&quot;</strong>, incorrect:<strong>&quot;Not a match! Give it another try.&quot;</strong><br/>
-			<br/>
-			Friends and family who provide support. [Social Environment]<br/>
-			Item feedback - correct:<strong>&quot;Correct!&quot;</strong>, incorrect:<strong>&quot;Not a match! Give it another try.&quot;</strong><br/>
-			<br/>
-			The level of crime in a person&rsquo;s neighborhood. [Social Environment]<br/>
-			Item feedback - correct:<strong>&quot;Correct!&quot;</strong>, incorrect:<strong>&quot;Not a match! Give it another try.&quot;</strong><br/>
-			<br/>
-			The amount of education a person receives. [Social Environment]<br/>
-			Item feedback - correct:<strong>&quot;Correct!&quot;</strong>, incorrect:<strong>&quot;Not a match! Give it another try.&quot;</strong><br/>
-			<br/>
-			The safety and comfort of a person&rsquo;s home. [Physical Environment]<br/>
-			Item feedback - correct:<strong>&quot;Correct!&quot;</strong>, incorrect:<strong>&quot;Not a match! Give it another try.&quot;</strong><br/>
-			<br/>
-			The income a person is able to earn. [Social Environment]<br/>
-			Item feedback - correct:<strong>&quot;Correct!&quot;</strong>, incorrect:<strong>&quot;Not a match! Give it another try.&quot;</strong><br/>
-			<br/>
-			The quality of air and water in the area. [Physical Environment]<br/>
-			Item feedback - correct:<strong>&quot;Correct!&quot;</strong>, incorrect:<strong>&quot;Not a match! Give it another try.&quot;</strong><br/>
-			<br/>
-			Completed interaction feedback: <strong>&quot;Congratulations, you have completed the exercise! If it was difficult then you may want to go back and review this lesson before moving on.&quot;</strong><br/>
-		</p>
-	</div>
-	<div class="seClear"></div>
-</div>
 
 <div id="matching1" class="matching">
   <div class="instructions" tabindex="0"><h1>Matching exercise - select a statement to start</h1></div>
@@ -114,7 +68,7 @@ $(function(){
 				The income a person is able to earn.
 			</dt>
 	    <dd class="aa2">Social Environment</dd>
-	    
+
 			<dt data-feedback='{"correct":"Correct!", "incorrect":"Not a match! Give it another try."}'>
 				The quality of air and water in the area.
 			</dt>
