@@ -13,118 +13,259 @@
 
 	<header>
 		<h1>eduQuery examples</h1>
-		<p>Below you'll find a general description and some examples of each eduQuery interaction type. Opening any of the examples will, in addition to showing you the example, reveal guidelines and a template that you can use to help you write the interaction into your lesson.</p>
+		<p>Below you'll find a description, lists of requirements and options and one or more interative examples of each eduQuery interaction type. Opening any of the interactive examples will also provide you with a link to a text write-up which you can use to get started writing the interaction into your lesson/course.</p>
 	</header>
 
 	<div class="mainmenu">
 
 		<dl class="main">
 
-			<dt><h2>Matching</h2></dt>
+			<dt id="matching"><h2>Matching</h2></dt>
 			<dd>
-				<p>Match statements/words/etc with catagories or sentence-blanks. Customizable feedback for correct and incorrect answers, and finishing the interaction.</p>
-				<div class="controls">
+				<div class="interaction-type-details">
+					<p>Match statements/words/etc with categories.  Learners get a feedback message after every successful and unsuccessful match.</p>
+					<h3>Requirements</h3>
 					<ul>
-						<li><a href="eduQuery/HLO/HLO1-10-NO1updated.html" data-height="900"><img src="img/matchingTypical.jpg"/>Typical use</a></li>
-						<li><a href="eduQuery/IPDS/IPDS4-8-NO1updated.html" data-height="1025"><img src="img/matchingFITB.jpg"/>Fill in the blank</a></li>
-						<!--<li><a href="matching_withascenario.htm"  rel="matching_withascenario.htm"><img src="img/matchingScenario.jpg"/>With a related scenario</a></li>-->
+						<li>Every &quot;statement&quot; needs to have a matching &quot;answer&quot;.</li>
+					</ul>
+					<h3>Options</h3>
+					<ul>
+						<li>Each &quot;statement&quot; can have two custom messages: one for when it’s successfully matched and one for every time it’s unsuccessfully matched.</li>
+						<li>Custom message for when learner completes interaction.</li>
+					</ul>
+				</div>
+				<div class="controls">
+					<h3>Interactive example</h3>
+					<ul>
+						<li><a href="eduQuery/HLO/HLO1-10-NO1updated.html" data-height="600" text-script-path="docs/matching.html"><img src="img/matchingTypical.jpg"/>Matching</a></li>
 					</ul>
 				</div>
 			</dd>
 
-			<dt><h2>Multiple-choice</h2></dt>
+			<dt id="fill-in-the-blank"><h2>Fill in the blank</h2></dt>
 			<dd>
-				<p>One answer per question. Customizable feedback for correct and incorrect answers, and finishing the interaction.</p>
-				<div class="controls">
+				<div class="interaction-type-details">
+					<p>Match words with sentence-blanks.  Learners get a feedback message after every successful and unsuccessful match.</p>
+					<h3>Requirements</h3>
 					<ul>
-						<li><a href="eduQuery/RR/RR4-31-NO3.html" data-height="973"><img src="img/multiTypical.jpg"/>One question at a time</a></li>
-						<li><a href="eduQuery/BPE/BPE1-22-NO2showAll.html" data-height="1225"><img src="img/multiShowAll.jpg"/>View all questions</a></li>
+						<li>Each &quot;sentence&quot; need to have at least one &quot;blank&quot;.</li>
+					</ul>
+					<h3>Options</h3>
+					<ul>
+						<li>Each &quot;word&quot; can have two custom messages: one for when it’s successfully matched and one for every time it’s unsuccessfully matched.</li>
+						<li>&quot;Sentences&quot; can have more than one blank.</li>
+						<li>Custom message for when learner completes interaction.</li>
+					</ul>
+				</div>
+				<div class="controls">
+					<h3>Interactive example</h3>
+					<ul>
+						<li><a href="eduQuery/IPDS/IPDS4-8-NO1updated.html" data-height="755" text-script-path="docs/fill-in-the-blank.html"><img src="img/matchingFITB.jpg"/>Fill in the blank</a></li>
 					</ul>
 				</div>
 			</dd>
 
-			<dt><h2>Scenario</h2></dt>
+			<dt id="multiple-choice"><h2>Multiple-choice</h2></dt>
 			<dd>
-				<p>A two part interation: scenario and response. The user reads a scenario or story on the first page and then anwsers a small number of questions on the second page via eduQuery Multiple-choice or eduQuery Showmore.</p>
-				<div class="controls">
+				<div class="interaction-type-details">
+					<p>One answer per question. Customizable feedback for correct and incorrect answers, and finishing the interaction.</p>
+					<h3>Requirements</h3>
 					<ul>
-						<li><a href="eduQuery/WM/WM2-9-NO1.html" data-height="1100"><img src="img/scenario-with-image.png"/>With Multiple-choice</a></li>
+						<li>Each question has only one answer.</li>
+					</ul>
+					<h3>Options</h3>
+					<ul>
+						<li>You can choose to show all questions to the learner or just one at a time.</li>
+						<li>Each &quot;question&quot; can have a custom message for when it’s selected as an answer.</li>
+						<li>Custom message for when learner completes interaction.</li>
+					</ul>
+				</div>
+				<div class="controls">
+					<h3>Interactive examples</h3>
+					<ul>
+						<li><a href="eduQuery/RR/RR4-31-NO3.html" data-height="620" text-script-path="docs/multiple-choice-one-at-a-time.html"><img src="img/multiTypical.jpg"/>One question at a time</a></li>
+						<li><a href="eduQuery/BPE/BPE1-22-NO2showAll.html" data-height="900" text-script-path="docs/multiple-choice-see-all.html"><img src="img/multiShowAll.jpg"/>View all questions</a></li>
 					</ul>
 				</div>
 			</dd>
 
-			<dt><h2>Slidescroller</h2></dt>
+			<dt id="scenario"><h2>Scenario</h2></dt>
 			<dd>
-				<p>Navigate through multiple slides of content. Slides can have: text, links, images, eduQuery Captioned voiceclip, eduQuery Multiple-choice</p>
-				<div class="controls">
+				<div class="interaction-type-details">
+					<p>A two part interaction: scenario and response. The user reads a scenario or story on the first page and then answers a small number of questions on the second page via Multiple-choice.</p>
+					<h3>Requirements</h3>
 					<ul>
-						<li><a href="eduQuery/HEA/HEA14-4-NO1.html" data-height="700"><img src="img/slidescroller.png" style="margin-bottom:17px;"/>Typical use</a></li>
-						<li><a href="eduQuery/RR/RR3-15-NO2.html" data-height="1100"><img src="img/sseduQuery.jpg"/>Using eduQuery interactions</a></li>
+						<li>Scenario text - recommended max of two paragraphs.</li>
+						<li>Small number of questions based on the scenario.</li>
+					</ul>
+					<h3>Options</h3>
+					<ul>
+						<li>Image to accompany scenario.</li>
+					</ul>
+				</div>
+				<div class="controls">
+					<h3>Interactive example</h3>
+					<ul>
+						<li><a href="eduQuery/WM/WM2-9-NO1.html" data-height="910" text-script-path="docs/scenario.html"><img src="img/scenario-with-image.png"/>With Multiple-choice</a></li>
 					</ul>
 				</div>
 			</dd>
 
-			<dt><h2>Show More</h2></dt>
+			<dt id="slide-scroller"><h2>Slide Scroller</h2></dt>
 			<dd>
-				<p>Simple text reveal. Each Showmore can have multiple items and each item can contain: text, links, images</p>
-				<div class="controls">
+				<div class="interaction-type-details">
+					<p>Navigate through multiple slides of content.</p>
+					<h3>Requirements</h3>
 					<ul>
-						<li><a href="eduQuery/HEA/HEA6-8-NO1.html" data-height="450"><img src="img/showmore.png" style="margin-bottom:29px;"/>Typical use</a></li>
-						<li><a href="eduQuery/DEP_update/DEP1-7-NO1.html" data-height="700"><img src="img/showmore-with-image.png" style="margin-bottom:47px;"/>With Image</a></li>
+						<li>Specify what content you want on every slide.</li>
+					</ul>
+					<h3>Options</h3>
+					<ul>
+						<li>Content options
+							<ul>
+								<li>text</li>
+								<li>links</li>
+								<li>images</li>
+								<li>captioned voiceclip</li>
+								<li>single multiple-choice question</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="controls">
+					<h3>Interactive example</h3>
+					<ul>
+						<li><a href="eduQuery/HEA/HEA14-4-NO1.html" data-height="660" text-script-path="docs/slide-scroller.html"><img src="img/slidescroller.png" style="margin-bottom:17px;"/>Slide Scroller</a></li>
 					</ul>
 				</div>
 			</dd>
 
-			<dt><h2>Tabbed Info</h2></dt>
+			<dt id="show-more"><h2>Show More</h2></dt>
 			<dd>
-				<p>Simple layered content. Each tab content can have: text, links, images</p>
-				<div class="controls">
+				<div class="interaction-type-details">
+					<p>Simple text reveal with related image.</p>
+					<h3>Requirements</h3>
 					<ul>
-						<li><a href="eduQuery/MH/MH1-23-NO5.html" data-height="750"><img src="img/tabbedContent.jpg"/>Typical use</a></li>
-						<li><a href="eduQuery/TCC/TCC10-4-NO1.html" data-height="750"><img src="img/tabbedContentWithPics.jpg"/>With Images</a></li>
-						<li><a href="eduQuery/TL2/TL2-7-NO1.html" data-height="1000"><img src="img/tabbedContentWithLinks.jpg"/>With Links</a></li>
+						<li>Title that will be visible at all times.</li>
+						<li>Text for each show more.</li>
+						<li>Specify related image.</li>
+					</ul>
+					<h3>Options</h3>
+					<ul>
+						<li>Each Showmore can have multiple items and each item can contain: text and links.</li>
+					</ul>
+				</div>
+				<div class="controls">
+					<h3>Interactive example</h3>
+					<ul>
+						<li><a href="eduQuery/DEP_update/DEP1-7-NO1.html" data-height="700" text-script-path="docs/show-more.html"><img src="img/showmore-with-image.png" style="margin-bottom:47px;"/>Show More</a></li>
 					</ul>
 				</div>
 			</dd>
 
-			<dt><h2>Captioned Voiceclips</h2></dt>
+			<dt id="tabbed-info"><h2>Tabbed Info</h2></dt>
 			<dd>
-				<p>Voiceclips with the sort of timed captions you typically see with video.</p>
-				<div class="controls">
+				<div class="interaction-type-details">
+					<p>Simple layered content.</p>
+					<h3>Requirements</h3>
 					<ul>
-						<li><a href="eduQuery/RRWv2/RRWv22-2-VC1.htm" data-height="250"><img src="img/vc.jpg"/>Typical use</a></li>
+						<li>Title that will be visible at all times.</li>
+						<li>Text for each tabbed info.</li>
+					</ul>
+					<h3>Options</h3>
+					<ul>
+						<li>Each tab content can have: text, links, images.</li>
+					</ul>
+				</div>
+				<div class="controls">
+					<h3>Interactive example</h3>
+					<ul>
+						<li><a href="eduQuery/MH/MH1-23-NO5.html" data-height="420" text-script-path="docs/tabbed-info.html"><img src="img/tabbedContent.jpg"/>Tabbed Info</a></li>
 					</ul>
 				</div>
 			</dd>
 
-			<dt><h2>Captioned Video HTML5/Flash-backup</h2></dt>
+			<dt id="captioned-voiceclip"><h2>Captioned Voiceclips</h2></dt>
 			<dd>
-				<p>This shows how we're presenting captioned video.</p>
-				<div class="controls">
+				<div class="interaction-type-details">
+					<p>Voiceclips with the sort of timed captions you typically see with video.</p>
+					<h3>Requirements</h3>
 					<ul>
-						<li><a href="eduQuery/MH/MH6-36-V1.htm" data-height="650"><img src="img/movieposter.jpg"/>Typical use</a></li>
+						<li>Script of exactly what you want the person to say.</li>
+						<li>If you have a specific type of person in mind, please provide a general description (age, gender, cultural background, etc.).</li>
+					</ul>
+					<h3>Options</h3>
+					<ul>
+						<li>You can have multiple voiceclips (recommended maximum of 3-4).</li>
+					</ul>
+				</div>
+				<div class="controls">
+					<h3>Interactive example</h3>
+					<ul>
+						<li><a href="eduQuery/RRWv2/RRWv22-2-VC1.htm" data-height="160" text-script-path="docs/captioned-voiceclip.html"><img src="img/vc.jpg"/>Captioned Voiceclips</a></li>
 					</ul>
 				</div>
 			</dd>
 
-			<dt><h2>Timeline</h2></dt>
+			<dt id="captioned-video"><h2>Captioned Video</h2></dt>
 			<dd>
-				<p>Clickable dates/events along a timeline.</p>
-				<div class="controls">
+				<div class="interaction-type-details">
+					<p>This shows how we're presenting captioned video.</p>
+					<h3>Requirements</h3>
 					<ul>
-						<li><a href="eduQuery/ASD/ASD-13-NO6.html" data-height="700"><img src="img/timeline.png"/>Typical use</a></li>
+						<li>Script of exactly what you want the actors to say.</li>
+						<li>Description of location(s) where you want the video to take place.</li>
+						<li>If you have a specific type of person(s) in mind, please provide a general description (age, gender, cultural background, etc.).</li>
+						<li>Make a notation if the same actors need to be used in other course videos.</li>
+					</ul>
+				</div>
+				<div class="controls">
+					<h3>Interactive example</h3>
+					<ul>
+						<li><a href="eduQuery/MH/MH6-36-V1.htm" data-height="370" text-script-path="docs/captioned-video.html"><img src="img/movieposter.jpg"/>Captioned Video</a></li>
 					</ul>
 				</div>
 			</dd>
 
-      <dt><h2>PullQuote</h2></dt>
+			<dt id="timeline"><h2>Timeline</h2></dt>
 			<dd>
-				<p>The pullquote is used to off-set and seperate a simple textblock or a textblock with a photo.</p>
-				<div class="controls">
+				<div class="interaction-type-details">
+					<p>Clickable dates/events along a timeline.</p>
+					<h3>Requirements</h3>
 					<ul>
-						<li><a href="eduQuery/HEA/HEA15-6-NO1.html" data-height="627"><img src="img/pullquote.jpg"/>Typical use</a></li>
-						<li><a href="eduQuery/DC/DC1-5-NO2.html" data-height="627"><img src="img/pullquote-with-image.png" style="margin-bottom:37px;"/>With Image</a></li>
-						<li><a href="eduQuery/HEA/HEA2-8-NO1.html" data-height="627"><img src="img/pullquote-with-link.png" style="margin-bottom:23px;"/>With Link</a></li>
+						<li>Provide a linear sequence of events.</li>
+						<li>Descriptive content for each event.</li>
+					</ul>
+					<h3>Options</h3>
+					<ul>
+						<li>In addition to text each event can have an image and/or link.</li>
+					</ul>
+				</div>
+				<div class="controls">
+					<h3>Interactive example</h3>
+					<ul>
+						<li><a href="eduQuery/ASD/ASD-13-NO6.html" data-height="360" text-script-path="docs/timeline.html"><img src="img/timeline.png"/>Timeline</a></li>
+					</ul>
+				</div>
+			</dd>
+
+      <dt id="pullquote"><h2>PullQuote</h2></dt>
+			<dd>
+				<div class="interaction-type-details">
+					<p>The pullquote is used to off-set and seperate a simple textblock or a textblock with a photo.</p>
+					<h3>Requirements</h3>
+					<ul>
+						<li>Provide the text that you would like to off-set.  We recommend a small amount of text.</li>
+					</ul>
+					<h3>Options</h3>
+					<ul>
+						<li>In addition to text you can have an image and/or a link.</li>
+					</ul>
+				</div>
+				<div class="controls">
+					<h3>Interactive example</h3>
+					<ul>
+						<li><a href="eduQuery/HEA/HEA15-6-NO1.html" data-height="340" text-script-path="docs/pullquote.html"><img src="img/pullquote.jpg"/>Pullquote</a></li>
 					</ul>
 				</div>
 			</dd>
