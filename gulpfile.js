@@ -9,6 +9,7 @@ const jslint = require('gulp-jslint');
 
 //usage gulp.src(paths.scripts)
 const paths = {
+  html: ['app/**/*.{html,htm}', '!app/eduQuery/**/css/**/*.html'],
   eduquerySupportingFiles: ['app/eduQuery/**','!app/eduQuery/**/*.{html,htm}'],
   images: 'app/img/*.{jpg,png,gif}',
   js: 'app/js/**/*.js',
@@ -19,6 +20,11 @@ const paths = {
 gulp.task('clean:dist', function() {
   return del.sync(['dist/**', '!dist']);
 })
+
+gulp.task('html', function(){
+   return gulp.src(paths.html, { base: 'app' })
+     .pipe(gulp.dest(paths.out));
+ });
 
 gulp.task('eduquery-supporting-files', function(){
   return gulp.src(paths.eduquerySupportingFiles, { base: 'app' })
@@ -51,6 +57,7 @@ gulp.task('images', function() {
 gulp.task('watch', function() {
   gulp.watch(paths.scss, ['sass']);
   gulp.watch(paths.js, ['js']);
+  gulp.watch(paths.html, ['html']);
 });
 
-gulp.task('default', [ 'clean:dist', 'eduquery-supporting-files', 'js', 'sass', 'images' ]);
+gulp.task('default', [ 'clean:dist', 'eduquery-supporting-files', 'js', 'sass', 'images', 'html' ]);
