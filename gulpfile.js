@@ -9,41 +9,16 @@ const jslint = require('gulp-jslint');
 
 //usage gulp.src(paths.scripts)
 const paths = {
-  index: 'app/index.html',
-  examples: ['app/eduQuery/**/*.{html,htm}', '!app/eduQuery/**/css/**/*.html'],
   eduquerySupportingFiles: ['app/eduQuery/**','!app/eduQuery/**/*.{html,htm}'],
   images: 'app/img/*.{jpg,png,gif}',
   js: 'app/js/**/*.js',
-  js_dev: 'app/js/the_sampler_cometh.js',
   scss: 'app/scss/*.scss',
-  includes: 'app/inc/*.php',
   out: 'dist'
 };
-
-const phpAuthHeader = '<?php require "inc/auth.php"; ?>';
 
 gulp.task('clean:dist', function() {
   return del.sync(['dist/**', '!dist']);
 })
-
-gulp.task('index', function(){
-  return gulp.src(paths.index)
-    .pipe(replace(/\.html/g, '.php'))
-    .pipe(gap.prependText(phpAuthHeader))
-    .pipe(rename({
-      extname: '.php'
-    }))
-    .pipe(gulp.dest(paths.out));
-});
-
-gulp.task('examples', function(){
-  return gulp.src(paths.examples, { base: 'app' })
-    .pipe(gap.prependText(phpAuthHeader))
-    .pipe(rename({
-      extname: '.php'
-    }))
-    .pipe(gulp.dest(paths.out));
-});
 
 gulp.task('eduquery-supporting-files', function(){
   return gulp.src(paths.eduquerySupportingFiles, { base: 'app' })
@@ -64,19 +39,6 @@ gulp.task('sass', function() {
     .pipe(gulp.dest(paths.out + '/css'));
 });
 
-gulp.task('js-dev', function() {
-  return gulp.src([paths.js_dev], { base: 'app' })
-    .pipe(jslint())
-    //.pipe(jslint.reporter('default', errorsOnly))
-    .pipe(jslint.reporter('stylish'));
-});
-
-gulp.task('sass-dev', function() {
-  return gulp.src(paths.scss)
-    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
-    .pipe(gulp.dest('app/css'));
-});
-
 // Copy all static images
 gulp.task('images', function() {
   return gulp.src(paths.images, { base: 'app' })
@@ -85,14 +47,10 @@ gulp.task('images', function() {
     .pipe(gulp.dest(paths.out));
 });
 
-gulp.task('php-includes', function() {
-  return gulp.src([paths.includes], { base: 'app' })
-    .pipe(gulp.dest(paths.out));
-});
-
 // Rerun the task when a file changes
-gulp.task('watch', ['sass-dev'], function() {
-  gulp.watch(paths.scss, ['sass-dev']);
+gulp.task('watch', function() {
+  gulp.watch(paths.scss, ['sass']);
+  gulp.watch(paths.js, ['js']);
 });
 
-gulp.task('default', [ 'clean:dist', 'index', 'examples', 'eduquery-supporting-files', 'js', 'sass', 'images', 'php-includes' ]);
+gulp.task('default', [ 'clean:dist', 'eduquery-supporting-files', 'js', 'sass', 'images' ]);
