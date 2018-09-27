@@ -51,7 +51,7 @@ InteractiveExample.prototype.activate = function(){
   this.boxy_iframe.attr('src', p);
   //add link to text write up of interaction if one doesn't already exist.
   if(this.boxy.find('.link-to-text').length === 0) {
-    this.boxy.append('<div class="link-to-text"><h4>Thinking about using this interaction type in your course?</h4><a href="'+ this.text_source +'" target="_blank">Check out the text write-up of the interactive example above</a></div>');
+    this.boxy.append('<div class="link-to-text"><h4>Thinking about using this eduQuery component in your course?</h4><a href="'+ this.text_source +'" target="_blank">Check out the text write-up of the interactive example above</a></div>');
   }
   //attach boxy
   this.activating_control.closest('dd').append(this.boxy);
