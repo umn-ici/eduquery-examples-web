@@ -14,12 +14,12 @@ const paths = {
   images: 'app/img/*.{jpg,png,gif}',
   js: 'app/js/**/*.js',
   scss: 'app/scss/*.scss',
-  out: 'dist'
+  out: 'docs'
 };
 
-gulp.task('clean:dist', function() {
-  return del.sync(['dist/**', '!dist']);
-})
+gulp.task('clean:docs', function() {
+  return del(['docs/**', '!docs']);
+});
 
 gulp.task('html', function(){
    return gulp.src(paths.html, { base: 'app' })
@@ -60,4 +60,4 @@ gulp.task('watch', function() {
   gulp.watch(paths.html, ['html']);
 });
 
-gulp.task('default', [ 'clean:dist', 'eduquery-supporting-files', 'js', 'sass', 'images', 'html' ]);
+gulp.task('default', gulp.series('clean:docs', 'eduquery-supporting-files', 'js', 'sass', 'images', 'html'));

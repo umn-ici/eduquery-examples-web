@@ -1,0 +1,8 @@
+.answer_area, .matching_ui .win .answer_area {margin-bottom:15px;}
+.answer_area a, .matching_ui .win .answer_area a {min-height:1px;padding-top:3px;padding-bottom:7px;}
+
+.aa1 {}
+
+.fitb-blank {display:inline-block;padding:0 35px;background:url(../images/blank_bg.gif) left bottom repeat-x;margin-right:5px;border-bottom:1px solid #303436;}
+*+html .fitb-blank {zoom:1;border-bottom:none;}
+* html .fitb-blank {zoom/**/:1;}

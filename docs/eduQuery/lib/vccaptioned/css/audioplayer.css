@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.playerlittle {
+    display: block;
+}
+
+.player {
+    position:relative;
+    width : 400px;
+	height : 60px;
+	overflow : hidden;
+    background-image:url(../images/player-bg.png);
+    background-repeat: no-repeat;
+    background-position: 49px 2px;
+	border-width : 0;
+    display: block;
+}
+
+.playback-control {
+    position: absolute;
+    left:0;
+    top:2px;
+    display:block; /* IE is so silly */
+    height: 58px;
+    width: 58px;
+    padding: 0;
+    border:none;
+    text-decoration: none;
+	border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    outline:none;
+}
+
+.playback-control > div {
+    position:absolute;
+    left:0;
+    top:0;
+    width:58px;
+    height:58px;
+}
+
+.notplaying > div {
+   background:url(../images/play-bg.png) 0 0 no-repeat;
+}
+
+.playing > div {
+    background:url(../images/pause-bg.png) 0 0 no-repeat;
+}
+
+.playback-control:hover > div,
+.playback-control:focus > div {
+    background-position: 0 -58px;
+}
+.playback-control:active {
+    outline:none;
+}
+
+.gutter {
+    float: right;
+    position: relative;
+    width: 317px;
+    height:3em;
+    margin: 6px 8px 0 0;
+    border: solid #999 1px;
+    background-color:#e8f1fe;/*#DFECFF;*/
+	overflow: hidden;
+}
+
+.caption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+}
+
+.captionBar, .promptBar{
+    /*width: 325px;*/
+    /*background-color:#FFFFFF;*/
+    /*min-height:2.8em;*/
+    margin: auto;
+    position: relative;
+    text-align:  left;
+    color:#000000;
+    font-family:  Helvetica,Arial,sans-serif;
+    font-size: .75em;
+	padding:  5px;
+    /*font-weight: bold;*/
+}
+
+/*.loading {
+    background-color: #fbd3cc;
+    box-shadow: 0 1px 0 #FFFFFF inset, 0 1px 0 #141E28;
+    display: block;
+    float: left;
+    height: 3em;
+	position: absolute;
+	top: 0;
+	left: 0;
+}*/
+
+.handle {
+	background-color: #6fc5ff;
+	opacity: .25;
+    box-shadow: 0 1px 0 #FFFFFF inset, 0 1px 0 #141E28;
+    display: block;
+    float: left;
+    height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.visually_hidden {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}

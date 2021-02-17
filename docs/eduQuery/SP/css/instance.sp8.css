@@ -1,0 +1,28 @@
+
+#SP8-9-NO2 #matching{width:673px;margin:0 auto 10px auto;border:1px solid #eee;}
+#SP8-9-NO2 .matching_ui {position:relative;background-color: #FFFFFF;font-family:"Trebuchet MS",Arial,Helvetica,sans-serif;overflow: visible;}
+#SP8-9-NO2 .answer_area a, #SP8-9-NO2 #matching .win .answer_area a {min-height:270px;background-image:none;}
+#SP8-9-NO2 .answer_area .area_title {margin-left:0;}
+/*#scene{margin-top: 35px; display:block;}*/
+#SP8-9-NO2 .matching_ui .statement_defs {width:300px;}
+#SP8-9-NO2 .matching_ui .answer_areas {width:290px;left:375px;}
+#SP8-9-NO2 .matching_ui .answer_areas .answer_area {float:none;}
+#SP8-9-NO2 .matching_ui .feedback_dialogue{position: absolute; top:0; left: 0;width: 673px;}
+#SP8-9-NO2 .statement_defs li{ display: inline-block;float: left; margin-right: 10px;}
+#SP8-9-NO2 .statement_defs li a {font-size: .9em;}
+#SP8-9-NO2 .msg_default {
+	background-color:#eee;
+	color:#273E4C;}
+
+/*scenario*/
+#SP8-9-NO2 .scenario-ui {
+	width:855px;
+	height:750px;}
+
+#SP8-9-NO2 .scenario-ui .scenario-instructions{ font-size: 15px;}
+#SP8-9-NO2 .scenario-ui .narrative p {width:80%;margin:0 auto; font-size: 1em;}
+
+#SP8-9-NO2 .dropped_statement {font-size: .9em;}
+
+#SP8-9-NO2 .matching_ui {min-height:680px;background-color:#fbfbfb;}
+/*#SP8-9-NO2 .matching_ui #scene-col {min-height:700px;}*/

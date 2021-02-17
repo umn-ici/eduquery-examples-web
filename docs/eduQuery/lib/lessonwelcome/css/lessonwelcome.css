@@ -1,0 +1,85 @@
+html, body {
+    margin:0;
+    padding:0;
+    font-family:"Trebuchet MS",Arial,Helvetica,sans-serif}
+
+#lessonwelcome {
+    border-bottom:3px solid #979797;
+}
+
+#lessonwelcome * {
+    line-height:1.25em;
+}
+
+#lessonwelcome .badge-and-title {
+    position:relative;
+    z-index:5;
+    min-height:91px;
+    margin:0;
+    padding-top:32px;
+    padding-left:149px;
+    border-bottom:3px solid #979797;
+}
+
+/*Can use a numbered badge image per lesson like in HIPPA*/
+#lessonwelcome .badge-and-title img {
+    position:absolute;
+    bottom:-25px;
+    left:0;
+}
+
+/*or use a generic numberless badge background image, and specify the number in the markup*/
+#lessonwelcome .blank-number-badge {
+    position: absolute;
+    bottom: -25px;
+    left: 0px;
+    display:block;
+    width: 149px;
+    height: 149px;
+    margin: 0px;
+    background: url(../img/lesson-number-badge.png) 0 0 no-repeat;
+    font-size: 65px;
+    font-weight: bold;
+    font-family: 'Open Sans';}
+#lessonwelcome .blank-number-badge span {
+    position:absolute;
+    left:57px;
+    top:30px;
+    color:#273e4c;}
+
+#lessonwelcome .badge-and-title .course {
+    color:#f05133}
+#lessonwelcome .badge-and-title .lesson {
+    color:#273e4c}
+
+#lessonwelcome .body-content {
+    max-width:960px;
+    position:relative;}
+#lessonwelcome .welcome-photo {
+    position:absolute;
+    top:0;
+    left:0}
+#lessonwelcome .text {
+    min-height:415px;
+    margin-left:305px;
+    padding-left:25px}
+    
+a.glossary-term {
+    font-weight:bold;
+    color:blue;
+    text-decoration:none}
+a.glossary-term:hover,
+a.glossary-term:focus {
+    color:#273e4c}
+
+/*from h5bp*/
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

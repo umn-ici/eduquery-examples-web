@@ -1,0 +1,84 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="en" />
+<title>Matching Exercise</title>
+
+<!--lib css-->
+<link href="../lib/util/iniframe.css" rel="stylesheet" type="text/css">
+<link href="../lib/matching/v15/css/matching.min.css" rel="stylesheet" type="text/css" media="screen" />
+
+<!--course/lesson css-->
+<link href="css/course.css" rel="stylesheet" type="text/css">
+<link href="css/instance.hlo1.css" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+/*.matching_ui {min-height:550px;}*/
+</style>
+
+<script type="text/javascript" src="../lib/jquery/jquery-1.7.min.js"></script>
+<script src="../lib/matching/v15/js/matching.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+	var m1 = new Matching($('#matching1'), null);
+	//optional shuffled statements enabled
+	//var m1 = new Matching($('#matching1'), {'shuffle_statements' : true});
+	m1.setMessage('win', 'Congratulations, you have completed the exercise!');
+});
+</script>
+</head>
+
+<body>
+
+<div id="matching1" class="matching">
+  <div class="instructions" tabindex="0"><h1>Matching exercise - select a statement to start</h1></div>
+  <div class="statement_defs">
+		<h2>Statements</h2>
+		<dl>
+	    <dt data-feedback='{"correct":"Correct!", "incorrect":"Not a match! Give it another try."}'>
+				The safety of a person&rsquo;s workplace.
+			</dt>
+	    <dd class="aa1">Physical Environment</dd>
+
+			<dt data-feedback='{"correct":"Correct!", "incorrect":"Not a match! Give it another try."}'>
+				Friends and family who provide support.
+			</dt>
+	    <dd class="aa2">Social Environment</dd>
+
+			<dt data-feedback='{"correct":"Correct!", "incorrect":"Not a match! Give it another try."}'>
+				The level of crime in a person&rsquo;s neighborhood.
+			</dt>
+	    <dd class="aa2">Social Environment</dd>
+
+			<dt data-feedback='{"correct":"Correct!", "incorrect":"Not a match! Give it another try."}'>
+				The amount of education a person receives.
+			</dt>
+	    <dd class="aa2">Social Environment</dd>
+
+			<dt data-feedback='{"correct":"Correct!", "incorrect":"Not a match! Give it another try."}'>
+				The safety and comfort of a person&rsquo;s home.
+			</dt>
+	    <dd class="aa1">Physical Environment</dd>
+
+			<dt data-feedback='{"correct":"Correct!", "incorrect":"Not a match! Give it another try."}'>
+				The income a person is able to earn.
+			</dt>
+	    <dd class="aa2">Social Environment</dd>
+
+			<dt data-feedback='{"correct":"Correct!", "incorrect":"Not a match! Give it another try."}'>
+				The quality of air and water in the area.
+			</dt>
+	    <dd class="aa1">Physical Environment</dd>
+	  </dl>
+	</div>
+	<div class="answer_areas">
+		<h2>Answer Areas</h2>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>You can haz previews!</title>
+<link href="css/contentstyles.css" rel="stylesheet" type="text/css" media="screen, projection" />
+<style type="text/css">
+    #swaptest_controls {margin:0 0 40px 0;padding:10px;background-color:#1d5798;}
+    /*#swaptest_controls ul {list-style:none;margin:0;padding:0;}
+    #swaptest_controls li {display:inline;margin-right:10px;}*/
+    #swaptest_controls a {text-decoration:none;color:#fff;border:1px solid #1d5798;margin-right:10px;}
+    #swaptest_controls a:hover {border-color:#fff;}
+    #swaptest_controls a.clicked {border-bottom-color:#fff;}
+    #contentWrapper {background-color:#f8f8f8;}
+</style>
+<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/contentswap.js"></script>
+<script type="text/javascript" src="js/swaptest.js"></script>
+<script>
+$(function(){
+
+var langArray = new Array(
+                    {lang:'English', content:'irc1.en.xml'},
+                    {lang:'Espanol', content:'irc1.es.xml'}
+                );
+
+SwapTest.init(
+	'#contentWrapper',
+	langArray
+);
+
+});
+</script>
+</head>
+
+<body>
+
+<div id="swaptest_controls"></div>
+
+<!--Must have; where the swappable content is written to the page by the script-->
+<div id="contentWrapper"></div>
+
+</body>
+</html>

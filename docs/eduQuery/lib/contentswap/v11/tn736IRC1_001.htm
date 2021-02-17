@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>You can haz previews!</title>
+<link href="css/contentstyles.css" rel="stylesheet" type="text/css" media="screen, projection" />
+<script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/contentswap.js"></script>
+<script>
+$(function(){
+
+/* uncomment to use (isn't used in most cases)
+$.extend({
+	contentLoadedCallback : function(){
+		// MCS would use this function to run any scripting they need on the elements we're creating.
+  	}
+});
+*/
+
+ContentSwap.init(
+	{'wrapperId' : '#contentWrapper'},
+	{'pageId' : 'page001'}, // corresponds to the id attribute of the page node in the XML file which contains this pages content.
+	{lang:'English', content:'irc1.en.xml'},
+	{lang:'Espanol', content:'irc1.es.xml'}
+);
+
+});
+</script>
+</head>
+
+<body>
+
+<p>1 | <a href="tn736IRC1_002.asp">2</a></p>
+
+<!--Must have; where the swappable content is written to the page by the script-->
+<div id="contentWrapper"></div>
+
+</body>
+</html>

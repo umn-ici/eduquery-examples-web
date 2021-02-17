@@ -1,0 +1,7 @@
+
+#TCC10-4-NO1 .tab-ui {width:900px;}
+#TCC10-4-NO1 .tab-ui #wrap {width:630px;}
+#TCC10-4-NO1 .tab-ui #intro-text, #TCC10-4-NO1 .tab-ui .user-activated .bod {width:590px;  min-height: 320px;}
+#TCC10-4-NO1 .tab-ui #intro-text img, #TCC10-4-NO1 #tabbed-info .bod img {margin:1em 0 2em 20px;float:right;}
+#TCC10-4-NO1 #tabbed-info .bod li {margin-bottom:1em;}
+#TCC10-4-NO1 .tab-ui .user-activated .bod img{margin-top:  10px;}

@@ -1,0 +1,52 @@
+#DEP1-3-NO1 .two-col-showmore .col-one {
+    width:267px;
+    padding-top:15px;
+}
+
+#DEP1-3-NO1 .two-col-showmore .col-two {
+    width:500px;
+}
+
+#DEP1-4-NO1 .matching_ui {
+    min-height: 650px;
+}
+
+#DEP1-4-NO1 .matching_ui .answer_areas {
+    width:450px;
+    left:370px;
+}
+
+#DEP1-4-NO1 .matching_ui .statement_defs {
+    width:350px;
+}
+
+#DEP1-5-NO1  .tab-ui #intro-text, 
+#DEP1-5-NO1 .tab-ui .user-activated .bod {
+    min-height: 225px;
+}
+#DEP1-7-NO1 .two-col-showmore {
+    width:960px;
+}
+
+#DEP1-7-NO1 .two-col-showmore .col-one {
+    width:400px;
+    padding-top:15px;
+}
+
+#DEP1-7-NO1 .two-col-showmore .col-two {
+    width:540px;
+}
+
+#DEP1-9-NO1 .two-col-showmore {
+    width:960px;
+}
+
+#DEP1-9-NO1 .two-col-showmore .col-one {
+    width:400px;
+    padding-top:15px;
+}
+
+#DEP1-9-NO1 .two-col-showmore .col-two {
+    width:540px;
+}
+

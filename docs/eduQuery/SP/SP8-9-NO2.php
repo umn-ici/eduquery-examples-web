@@ -1,0 +1,147 @@
+<?php
+require "../../inc/auth.php";
+?>
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="en">
+<title>Scenario Exercise</title>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="en" />
+
+<!--lib css-->
+<link href="../lib/util/iniframe.css" rel="stylesheet" type="text/css">
+<link href="../lib/matching/v15/css/matching.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/opensans/stylesheet.css" type="text/css" charset="utf-8">
+<link rel="stylesheet" href="../lib/scenario/v1/css/scenario.min.css">
+
+<!--course/lesson css-->
+<link href="css/course.css" rel="stylesheet" type="text/css">
+<link href="css/instance.sp8.css" rel="stylesheet" type="text/css">
+
+<!--eduQuery Example css-->
+<link href="../../css/eduqueryexample.css" rel="stylesheet" type="text/css">
+
+<!--lib javascript-->
+<script src="../lib/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="../lib/matching/v15/js/matching.min.js" type="text/javascript"></script>
+<script src="../lib/scenario/v1/js/scenario.min.js"></script>
+<script src="js/sp8.pcs.js" type="text/javascript" ></script>
+<script>
+	$(function(){
+		if(PCS && typeof PCS.runScriptForSlide === 'function'){
+			PCS.runScriptForSlide(9, $('#matching'));
+		}
+		if ($('.description').height()) {
+			//code	
+			$('.written_example').css('height',$('.description').height());
+		}
+	});
+</script>
+</head>
+
+<body id="SP8-9-NO2">
+	
+<div class="description_container">
+	<div class="description">
+		<header><h1>Description</h1></header>
+		<p>A scenario is used to provide context with a matching exercise for direct application.</p>
+		<header><h1>Insert directions in the text field:</h1></header>
+		<p>Directions: Once you have read the scenario below, click on the &ldquo;Your Response&rdquo; button and complete the matching exercise. Begin by clicking on a statement, and then click on the matching category.</p>
+		<header><h1>Insert description copy in the UMN interaction field:</h1></header>
+		<p>Interaction type: scenario - with matching</p>
+		<p>Description: The learner reads the scenario, and then completes the matching exercise, matching each statement to the correct category.</p>
+	</div>	
+	<div class="written_example">
+		<header><h1>Interaction Write-up of this example for the UMN interaction field</h1></header>
+		<h2>Bolded Quotes may be customized to provide further explanation or context to the learner.</h2>
+		
+		<p>Scenario:<br/>
+			Casey&rsquo;s update on his social media webpage:<br/>
+			The guy I work for is so great! We actually have a lot in common and I like working for him. His name is Mark Smith and he lives in Berkeley, California. He uses a wheelchair and can&rsquo;t move his arms much, so I help him at home in the morning. But it&rsquo;s cool because he&rsquo;s pretty independent and stays by himself at night. He uses his voice on the computer to design websites for other people. He has so many computers in his house, it&rsquo;s unreal! I love talking to him about my passion for computers, graphic design, video games and art.
+		</p>
+		<p>Casey shared the name of the person he worked for.[1. Private Information Shared]<br/>
+			Item feedback - correct:<strong>&quot;Correct!&quot;</strong>, incorrect:<strong>&quot;Sorry! Try again.&quot;</strong><br/>
+			<br/>
+			Casey shared where the person he works for lives.[1. Private Information Shared]<br/>
+			Item feedback - correct:<strong>&quot;Correct!&quot;</strong>, incorrect:<strong>&quot;Sorry! Try again.&quot;</strong><br/>
+			<br/>
+			Casey shared what he was interested in: computers, graphic design, video games, and art.[2. Nothing Private Shared]<br/>
+			Item feedback - correct:<strong>&quot;Correct!&quot;</strong>, incorrect:<strong>&quot;Sorry! Try again.&quot;</strong><br/>
+			<br/>
+			Casey shared that the person he works for uses a wheelchair and has limited arm mobility.[1. Private Information Shared]<br/>
+			Item feedback - correct:<strong>&quot;Correct!&quot;</strong>, incorrect:<strong>&quot;Sorry! Try again.&quot;</strong><br/>
+			<br/>
+			Casey shared that he likes working for this person.[2. Nothing Private Shared]<br/>
+			Item feedback - correct:<strong>&quot;Correct!&quot;</strong>, incorrect:<strong>&quot;Sorry! Try again.&quot;</strong><br/>
+			<br/>
+			Casey shared that there were a lot of computers in the house.[1. Private Information Shared]<br/>
+			Item feedback - correct:<strong>&quot;Correct!&quot;</strong>, incorrect:<strong>&quot;Sorry! Try again.&quot;</strong><br/>
+			<br/>
+			Completed interaction feedback: <strong>&quot;Congratulations, you&rsquo;ve successfully matched all the items!&quot;</strong><br/>
+		</p>
+	</div>
+	<div class="seClear"></div>
+</div>
+
+<div role="main" id="scenario1" class="scenario">
+	
+	<h1 class="scenario-instructions">After reading the scenario, click on the &quot;Your Response&quot; button to the right to complete the interaction.</h1>
+	
+	<div class="view-nudge">
+        <div class="narrative">
+			<div class="inner-wrap">
+				<h2>Scenario:</h2>
+				<div class="narrative-body">
+					<h3 style="width:80%;margin:2em auto 0 auto;font-size:.9em;font-family:'OpenSansRegular',Arial,sans-serif;">Casey&rsquo;s update on his social media webpage:</h3>
+					<p>The guy I work for is so great! We actually have a lot in common and I like working for him. His name is Mark Smith and he lives in Berkeley, California. He uses a wheelchair and can&rsquo;t move his arms much, so I help him at home in the morning. But it&rsquo;s cool because he&rsquo;s pretty independent and stays by himself at night. He uses his voice on the computer to design websites for other people. He has so many computers in his house, it&rsquo;s unreal! I love talking to him about my passion for computers, graphic design, video games and art.</p>
+				</div>
+			</div>
+		</div>
+		<div class="responses">
+			<div class="inner-wrap">
+				
+				
+				<div id="matching">
+					<div class="instructions" tabindex="0"><h1>Match the statements with the right categories.</h1></div>
+				
+					<div class="statement_defs">
+						<h2>Statements</h2>
+							<dl>
+								<dt data-feedback='{"correct":"Good job!", "incorrect":"Sorry! Try again."}'>Casey shared the name of the person he worked for.</dt>
+								<dd class="aa1">Private Information Shared</dd>
+								
+								<dt data-feedback='{"correct":"Good job!", "incorrect":"Sorry! Try again."}'>Casey shared where the person he works for lives.</dt>
+								<dd class="aa1">Private Information Shared</dd>
+								
+								<dt data-feedback='{"correct":"Good job!", "incorrect":"Sorry! Try again."}'>Casey shared what he was interested in: computers, graphic design, video games, and art.</dt>
+								<dd class="aa2">Nothing Private Shared</dd>
+								
+								<dt data-feedback='{"correct":"Good job!", "incorrect":"Sorry! Try again."}'>Casey shared that the person he works for uses a wheelchair and has limited arm mobility.</dt>
+								<dd class="aa1">Private Information Shared</dd>
+								
+								<dt data-feedback='{"correct":"Good job!", "incorrect":"Sorry! Try again."}'>Casey shared that he likes working for this person.</dt>
+								<dd class="aa2">Nothing Private Shared</dd>
+								
+								<dt data-feedback='{"correct":"Good job!", "incorrect":"Sorry! Try again."}'>Casey shared that there were a lot of computers in the house.</dt>
+								<dd class="aa1">Private Information Shared</dd>
+							</dl>
+					</div>
+					
+					<div class="answer_areas">
+						<h2>Matching statements</h2>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+</body>
+</html>

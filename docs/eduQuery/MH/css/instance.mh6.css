@@ -1,0 +1,77 @@
+#multiplechoice {width:842px;margin:0 auto;border:1px solid #ccc;}
+#MH3-4-NO1 .multiplechoice_ui {min-height:550px;}
+
+#mc_knowledgebank {padding-top:7px;}
+
+#MH3-4-NO1 .msg_win {font-size:1.1em;}
+
+#MH6-8-NO1 .tab-ui {width:900px;}
+#MH6-8-NO1 .tab-ui #wrap {width:630px;}
+#MH6-8-NO1 .tab-ui #intro-text, #MH6-8-NO1 .tab-ui .user-activated .bod {width:590px;  min-height: 500px;}
+#MH6-8-NO1 .tab-ui #intro-text img, #MH6-8-NO1 #tabbed-info .bod img {margin:1em 0 2em 20px;float:right;}
+#MH6-8-NO1 #tabbed-info .bod li {margin-bottom:1em;}
+#MH6-8-NO1 .tab-ui .user-activated .bod img{margin-top:  10px;}
+
+#MH6-13-NO2 .tab-ui {width:900px;}
+#MH6-13-NO2 .tab-ui #wrap {width:630px;}
+#MH6-13-NO2 .tab-ui #intro-text, #MH6-13-NO2 .tab-ui .user-activated .bod {width:590px;  min-height: 340px;}
+#MH6-13-NO2 .tab-ui #intro-text img, #MH6-13-NO2 #tabbed-info .bod img {margin:1em 0 2em 20px;float:right;}
+#MH6-13-NO2 #tabbed-info .bod li {margin-bottom:1em;}
+#MH6-13-NO2 .tab-ui .user-activated .bod img{margin-top:  10px;}
+
+#MH6-15-NO3 .scroller-view .panel {padding-top:45px;}
+#MH6-15-NO3 .OneColumn {width: 635px; margin:0 auto;}
+#MH6-15-NO3 h2 {margin-bottom:0;}
+
+#MH6-15-NO3 li {margin:  0 0 10px 0;}
+#MH6-15-NO3 label{margin:  5px 10px;}
+#MH6-15-NO3 input[type=radio]{width: 20px; height: 20px; /*padding-left: -5px;*/ vertical-align: bottom; top:-3px; /*left:6px;*/ position: relative;}
+
+#MH6-15-NO3 input{margin: 0 2px; font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;}
+#MH6-15-NO3 input[type=text]{width:2.5em;background-color: #F0F0F0; margin:  5px 5px 0; line-height: 1.2; font-size: 1em;}
+#MH6-15-NO3 fieldset {border: 0 none; margin:0 0;}
+#MH6-15-NO3 li legend{text-indent: -25px;}
+#MH6-15-NO3 li legend span{display: block; width: 525px;}
+#MH6-15-NO3 #warning,#MH6-15-NO3 #warning2,#MH6-15-NO3 #same,#MH6-15-NO3 #level1,#MH6-15-NO3 #level2{display:none;}
+#MH6-15-NO3 .feedback{background: #fcdecb url(../images/idea.gif) no-repeat right; text-indent:  40px;font-size: 2.2em; margin-bottom: 25px;}
+
+#MH6-31-NO4 .scroller-view .panel {padding-top:40px;}
+#MH6-31-NO4 .OneColumn {width: 635px; margin:0 auto;}
+/*#MH6-31-NO4 .OneColumn h1{color: black; font-size: 1.5em;}
+*/#MH6-31-NO4 h2 {margin-bottom:0;}
+
+#MH6-31-NO4 li {margin:  0 0 20px 0;}
+
+#MH6-31-NO4 input{margin:  5px 10px 0 10px;}
+#MH6-31-NO4 fieldset {border: 0 none;}
+#MH6-31-NO4 legend{display:none;}
+
+#MH6-31-NO4 .multiplechoice_ui {min-height: 250px;}
+
+#MH6-31-NO4 .multiplechoice_ui .q_num {display: none;}
+
+#MH6-31-NO4 .message .msg_default, #MH6-31-NO4 .message .msg_default .msg_win {background-color:  green; color: white; font-size:  1em;}
+
+
+#MH6-45-NO5 .scroller-view .panel {padding-top:45px;}
+#MH6-45-NO5 .OneColumn {width: 635px; margin:0 auto;}
+
+#MH6-45-NO5 h2 {margin-bottom:0;}
+
+#MH6-45-NO5 li {margin:  0 0 10px 0;}
+#MH6-45-NO5 label{margin:  5px 10px; position: relative;}
+#MH6-45-NO5 input[type=radio]{width: 20px; height: 20px; /*padding-left: -5px;*/ vertical-align: bottom; top:-1px; /*left:6px;*/ position: relative;}
+
+#MH6-45-NO5 input{margin: 0 2px; font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;}
+#MH6-45-NO5 input[type=text]{width:2.5em;background-color: #F0F0F0; margin:  5px 5px 0; line-height: 1.2; font-size: 1em;}
+#MH6-45-NO5 fieldset {border: 0 none; margin:0 0;}
+#MH6-45-NO5 li legend{text-indent: -25px; width:  575px;}
+#MH6-45-NO5 li legend span{display: block; width: 525px;}
+#MH6-45-NO5 #smoking,#MH6-45-NO5 #meds,#MH6-45-NO5 #p2 .OneColumn{display:none;}
+#MH6-45-NO5 .labelhelper{color: #9EA0A3;font-style:italic;font-size: .9em;}
+
+#MH6-45-NO5 .name{font-weight:bold;font-size: 1.1em;}
+
+#MH6-45-NO5 .feedback{background: #fcdecb url(../images/idea.gif) no-repeat right; text-indent:  40px;font-size: 2.2em; margin-bottom: 25px;}
+/*WebAIM hidden class (AT readable, but out of sight)*/
+.hidden {position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Video Player</title>
+
+<!--lib css-->
+<link href="../lib/util/iniframe.css" rel="stylesheet" type="text/css">
+  
+<!--catalogue css-->
+<link href="../../css/eduqueryexample.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+#videowrap {
+    width:842px;
+	min-height:500px;
+	float:left;
+	border:0px solid #fff;}
+#catalogueitem {
+	width:1200px;
+	margin:0 auto;
+	background-color:#000;
+	overflow:hidden;}
+#example_video_1 {
+    margin-top:115px;
+    margin-left:181px;}
+</style>
+
+<!-- Change URLs to wherever Video.js files will be hosted -->
+<link href="../lib/video-js/video-js.min.css" rel="stylesheet" type="text/css">
+<!-- video.js must be in the <head> for older IEs to work. -->
+<script src="../lib/video-js/video.min.js"></script>
+
+<!-- Unless using the CDN hosted version, update the URL to the Flash SWF -->
+<script>
+  _V_.options.flash.swf = "../lib/video-js/video-js.swf";
+</script>
+
+</head>
+<body>
+
+<div id="catalogueitem">
+
+<div id="videowrap">
+  
+  <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="480" height="270"
+      poster="HLT3-39-V1-medium-poster.jpg"
+      data-setup="{}">
+    <source src="HLT3-39-V1-medium.mov" type='video/mp4' />
+    <track kind="captions" src="HLT3-39-V1.srt" srclang="en" label="English" default />
+  </video>
+
+</div>
+  
+<div id="description">
+	<section>
+		<header><h1>Description</h1></header>
+		<p>Video through the videoJS player. Native playback in modern browsers via HTML5 video support. Flash backup for older browsers. Support for poster image before playback begins. Support for captions in the same format as our audio player.</p>
+	</section>
+	<section>
+		<header><h1>Written form in FMP</h1></header>
+		<p>coming soon</p>
+	</section>
+</div>
+
+</div>
+  
+</body>
+</html>
